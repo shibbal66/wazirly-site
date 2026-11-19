@@ -77,12 +77,18 @@ type. Crash reports are kept for 90 days and are not used for advertising.</p>
 Recent Android versions hide some of this information from screen sharing automatically, but not every
 app marks its sensitive fields.</p>
 
-<h2>Ads and purchases</h2>
-<p>Wazirly may in the future offer a paid Premium plan through Google Play and show ads to free users. If
-that happens, purchases are handled by Google Play, and ads may be served by Google AdMob, which may use
-your device's advertising ID according to <a href="https://policies.google.com/privacy">Google's Privacy
-Policy</a>. Where required, Wazirly will ask for your consent first. This policy will be updated before
-either is added.</p>
+<h2>Premium and purchases</h2>
+<p>Wazirly Premium is a subscription sold through Google Play. Google Play handles the payment; Wazirly never
+sees your card or payment details. To confirm a subscription, the app sends Wazirly's server the purchase token
+Google Play gives it, and the server checks it with Google Play. The server keeps that token, linked to your
+random install identifier, while the subscription lasts, so it can give you Premium's daily limits and see when
+it renews or ends. You can cancel at any time in Google Play.</p>
+
+<h2>Ads</h2>
+<p>Wazirly may in the future show ads to free users (Premium has none). If that happens, ads may be served by
+Google AdMob, which may use your device's advertising ID according to
+<a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Where required, Wazirly will ask for
+your consent first. This policy will be updated before ads are added.</p>
 
 <h2>Permissions Wazirly uses</h2>
 <ul>
@@ -111,6 +117,9 @@ revoke permissions in Android settings.</p>
     with the subject "Wazirly data deletion". All records linked to your install are deleted within 30 days.
     Error logs are deleted automatically within 30 days even without a request.</li>
   <li><strong>Crash reports</strong> are not linked to you and are deleted automatically after 90 days.</li>
+  <li><strong>Premium purchase records</strong> (the purchase token linked to your install identifier) are kept
+    while your subscription lasts. To have them deleted, cancel the subscription in Google Play and email the
+    address above with the subject "Wazirly data deletion".</li>
 </ol>
 
 <h2>Children</h2>
