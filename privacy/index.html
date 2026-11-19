@@ -22,7 +22,7 @@
 <body>
 <main>
 <h1>Wazirly Privacy Policy</h1>
-<p class="meta">Last updated: 19 November 2026</p>
+<p class="meta">Last updated: 20 November 2026</p>
 
 <p>Wazirly is an Android app that helps you with whatever is on your screen. You tap a floating button and
 Wazirly reads the screen to explain, translate or suggest what to do. This policy explains what Wazirly
@@ -36,7 +36,8 @@ sell your data.</p>
     notification while screen sharing is on, and you can stop it at any time.</li>
   <li><strong>Text on the screen.</strong> Wazirly reads text from the captured screen using Google ML Kit
     text recognition, which runs entirely on your phone.</li>
-  <li><strong>Settings you choose</strong>, such as your preferred language, are stored on your phone.</li>
+  <li><strong>Not the system bars.</strong> In versions after 0.3.0, Wazirly leaves out the status bar (time,
+    battery, signal and notification icons) and the navigation bar when it reads or sends the screen.</li>
 </ul>
 
 <h2>What stays on your phone</h2>
@@ -44,22 +45,34 @@ sell your data.</p>
 discarded.
 Wazirly does not save screenshots to your phone's storage or gallery. On-device text reading does not send
 anything off your phone.</p>
+<p>Wazirly stores a few small things on your phone: whether you agreed to the cloud features, a copy of your
+Premium status, small app preferences (for example, how many times a tip has been shown), the random install
+identifier its server uses, and crash reports waiting to be sent (see Crash reports). Google Firebase, which
+Wazirly uses for its server and crash reports, also keeps its own app tokens on your phone.</p>
 
 <h2>Cloud features</h2>
 <p>Some features need more help than your phone can give, for example a detailed explanation or an image
 description. When you use one of these features, Wazirly sends <strong>only what is needed for that
-request</strong> (the text read from your screen, or the screen image if the feature needs it, plus your
-question) over an encrypted connection to Wazirly's server, which runs on Google Cloud. The server passes
-it to an AI model provider to produce the answer and sends the answer back to you. The features that look at
-the picture of your screen ("Describe image", "Ask a question" and "Where do I tap?") send a smaller copy of the
-screenshot, and only after you agree to it in the app the first time.</p>
+request</strong> (the text read from your screen and, if the feature needs it, a smaller copy of the screen
+image, plus your question or goal) over an encrypted connection to Wazirly's server, which runs on Google
+Cloud. Each request also includes your phone's language setting, used only to choose the language of the
+answer. The server passes the request to Anthropic, the AI provider that produces the answer on Wazirly's
+behalf, and sends the answer back to you. The features that look at the picture of your screen ("Describe
+image", "Ask a question" and "Where do I tap?") send it only after you agree to it in the app the first
+time.</p>
 <ul>
   <li>Requests are not used by Wazirly to build advertising profiles and are not sold.</li>
-  <li>The server keeps a short record of requests (time, a random app install identifier and usage counts)
-    to enforce free usage limits and prevent abuse. It does not keep the content of your screen after the
-    answer is returned, except in short-lived error logs, which are deleted within 30 days.</li>
-  <li>AI providers process requests under terms that do not allow them to use the content to train their
-    models.</li>
+  <li>Wazirly's server does not store your screen text, screenshots, typed questions or answers.</li>
+  <li>To enforce daily limits and prevent abuse, the server keeps daily usage counts linked to a random install
+    identifier (for Premium, to the subscription). They are deleted automatically about 31 days after the day
+    they count. The install identifier itself is kept on the server until you tap Delete my data.</li>
+  <li>Server logs hold technical details only, such as the time, the result and the network address a request
+    came from. They never include your screen content and are deleted automatically after 30 days.</li>
+  <li>Anthropic's commercial terms do not allow it to train its models on Wazirly's requests. Anthropic deletes
+    requests and answers within 30 days, unless they are flagged as breaking its usage policy (then kept for up
+    to 2 years) or the law requires keeping them longer. See
+    <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">Anthropic's
+    data retention policy</a>.</li>
 </ul>
 <p>Wazirly tells you in the app when a feature uses the cloud. If you do not use cloud features, nothing
 from your screen leaves your phone.</p>
@@ -69,8 +82,8 @@ from your screen leaves your phone.</p>
 problem can be found and fixed. A report contains technical details only: what went wrong in the app's code,
 the app version, your phone model and Android version, details such as screen size and memory, a random
 Crashlytics install identifier, and short notes about what Wazirly was doing (for example "read screen" or how
-long a step took). Crash reports never include the text or images from your screen, AI answers, or anything you
-type. Crash reports are kept for 90 days and are not used for advertising.</p>
+long a step took). Wazirly never adds the text or images from your screen, AI answers or anything you type to a
+crash report. Crash reports are kept for 90 days and are not used for advertising.</p>
 
 <h2>Sensitive screens</h2>
 <p>Please do not use Wazirly on screens showing passwords, one-time codes, card numbers or other secrets.
@@ -82,7 +95,8 @@ app marks its sensitive fields.</p>
 sees your card or payment details. To confirm a subscription, the app sends Wazirly's server the purchase token
 Google Play gives it, and the server checks it with Google Play. The server keeps that token, linked to your
 random install identifier, while the subscription lasts, so it can give you Premium's daily limits and see when
-it renews or ends. You can cancel at any time in Google Play.</p>
+it renews or ends. The server deletes the token about 3 to 4 days after the paid period ends, even if you don't
+use Wazirly again. To delete it sooner, tap Delete my data. You can cancel at any time in Google Play.</p>
 
 <h2>Ads</h2>
 <p>Wazirly may in the future show ads to free users (Premium has none). If that happens, ads may be served by
@@ -102,25 +116,32 @@ your consent first. This policy will be updated before ads are added.</p>
 
 <h2>Sharing</h2>
 <p>Wazirly does not sell or rent your information. It shares information only with the service providers
-described above (Google Cloud and AI model providers to answer your requests, and Google Firebase Crashlytics
-for crash reports), or when required by law.</p>
+described above (Google Cloud to run Wazirly's server, Anthropic to answer your requests, Google Play for
+purchases, and Google Firebase Crashlytics for crash reports), or when required by law.</p>
 
 <h2 id="delete-data">Your choices and deleting your data</h2>
 <p>Wazirly does not require an account. You can stop screen sharing at any time from the notification and
 revoke permissions in Android settings.</p>
 <p>To delete your Wazirly data:</p>
 <ol>
-  <li><strong>Data on your phone</strong> (settings and preferences): open Android Settings &rarr; Apps &rarr;
-    Wazirly &rarr; Storage &rarr; Clear storage, or uninstall Wazirly.</li>
-  <li><strong>Server-side records</strong> (usage counts linked to a random install identifier, and short-lived
-    error logs): email <a href="mailto:shibbalfarooq66@gmail.com?subject=Wazirly%20data%20deletion">shibbalfarooq66@gmail.com</a>
-    with the subject "Wazirly data deletion". All records linked to your install are deleted within 30 days.
-    Error logs are deleted automatically within 30 days even without a request.</li>
+  <li><strong>In the app</strong>: tap <strong>Delete my data</strong>. If you don't see it, update Wazirly from
+    Google Play first (versions 0.3.0 and earlier don't have it). This deletes, on Wazirly's server, the usage
+    counts and Premium purchase record linked to your install and the random install identifier itself. On your
+    phone, it clears your cloud-feature consent, the copy of your Premium status and app preferences. If you have
+    Premium, today's usage count for your subscription is kept so its daily limit still applies. It is deleted
+    about 2 days later or, if you use Premium again that day, about 31 days later like other usage counts.</li>
+  <li><strong>Premium stays active.</strong> Deleting your data does not cancel your subscription. Wazirly checks
+    your purchase with Google Play again and keeps your Premium under a new install identifier, with a new
+    purchase record. To stop paying, cancel the subscription in Google Play.</li>
+  <li><strong>Data on your phone</strong>: open Android Settings &rarr; Apps &rarr; Wazirly &rarr; Storage &rarr;
+    Clear storage, or uninstall Wazirly. This removes only what is on your phone: server records stay, and the
+    server can then no longer tell which were yours. Tap Delete my data first.</li>
+  <li><strong>Automatic deletion</strong>, even without a request: usage counts about 31 days after the day they
+    count, Premium purchase tokens about 3 to 4 days after the paid period ends, and server logs after 30 days.</li>
   <li><strong>Crash reports</strong> are not linked to you and are deleted automatically after 90 days.</li>
-  <li><strong>Premium purchase records</strong> (the purchase token linked to your install identifier) are kept
-    while your subscription lasts. To have them deleted, cancel the subscription in Google Play and email the
-    address above with the subject "Wazirly data deletion".</li>
 </ol>
+<p>Questions about deleting your data: email
+<a href="mailto:shibbalfarooq66@gmail.com?subject=Wazirly%20data%20deletion">shibbalfarooq66@gmail.com</a>.</p>
 
 <h2>Children</h2>
 <p>Wazirly is not directed at children under 13 and does not knowingly collect information from them.</p>
@@ -129,7 +150,7 @@ revoke permissions in Android settings.</p>
 <p>If this policy changes, the new version will be posted on this page with a new "Last updated" date.</p>
 
 <h2>Contact</h2>
-<p>Questions about privacy: <a href="mailto:shibbalfarooq66@gmail.com">shibbalfarooq66@gmail.com</a></p>
+<p>Questions about privacy or your data: <a href="mailto:shibbalfarooq66@gmail.com">shibbalfarooq66@gmail.com</a></p>
 </main>
 </body>
 </html>
