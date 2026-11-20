@@ -46,9 +46,10 @@ a suggested reply, for up to 30 more seconds so you can reopen the replies), and
 Wazirly does not save screenshots to your phone's storage or gallery. On-device text reading does not send
 anything off your phone.</p>
 <p>Wazirly stores a few small things on your phone: whether you agreed to the cloud features, a copy of your
-Premium status, small app preferences (for example, how many times a tip has been shown), the random install
-identifier its server uses, and crash reports waiting to be sent (see Crash reports). Google Firebase, which
-Wazirly uses for its server and crash reports, also keeps its own app tokens on your phone.</p>
+Premium status, how you chose suggested replies to speak for you (as a man, as a woman, or neither), small app
+preferences (for example, how many times a tip has been shown), the random install identifier its server uses,
+and crash reports waiting to be sent (see Crash reports). Google Firebase, which Wazirly uses for its server
+and crash reports, also keeps its own app tokens on your phone.</p>
 
 <h2>Cloud features</h2>
 <p>Some features need more help than your phone can give, for example a detailed explanation or an image
@@ -56,13 +57,16 @@ description. When you use one of these features, Wazirly sends <strong>only what
 request</strong> (the text read from your screen and, if the feature needs it, a smaller copy of the screen
 image, plus your question, your goal or what you want a reply to say) over an encrypted connection to Wazirly's server, which runs on Google
 Cloud. Each request also includes your phone's language setting, used only to choose the language of the
-answer. The server passes the request to Anthropic, the AI provider that produces the answer on Wazirly's
-behalf, and sends the answer back to you. The features that look at the picture of your screen ("Describe
-image", "Ask a question", "Where do I tap?" and "Suggest a reply" when it can't read a chat's text, for example
-Urdu script) send it only after you agree to it in the app the first time.</p>
+answer. If you chose how suggested replies speak for you, "Suggest a reply" also sends that choice (as a man, as
+a woman, or neither), used only so the replies' verbs fit you, for example "aa raha hoon" or "aa rahi hoon". You
+can change it in the app at any time. The server passes the request to Anthropic, the AI provider that produces
+the answer on Wazirly's behalf, and sends the answer back to you. The features that look at the picture of your
+screen ("Describe image", "Ask a question", "Where do I tap?" and "Suggest a reply" when it can't read a chat's
+text, for example Urdu script) send it only after you agree to it in the app the first time.</p>
 <ul>
   <li>Requests are not used by Wazirly to build advertising profiles and are not sold.</li>
-  <li>Wazirly's server does not store your screen text, screenshots, typed questions or answers.</li>
+  <li>Wazirly's server does not store your screen text, screenshots, typed questions, answers or how you chose
+    replies to speak for you.</li>
   <li>To enforce daily limits and prevent abuse, the server keeps daily usage counts linked to a random install
     identifier (for Premium, to the subscription). They are deleted automatically about 31 days after the day
     they count. The install identifier itself is kept on the server until you tap Delete my data.</li>
@@ -127,9 +131,10 @@ revoke permissions in Android settings.</p>
   <li><strong>In the app</strong>: tap <strong>Delete my data</strong>. If you don't see it, update Wazirly from
     Google Play first (versions 0.3.0 and earlier don't have it). This deletes, on Wazirly's server, the usage
     counts and Premium purchase record linked to your install and the random install identifier itself. On your
-    phone, it clears your cloud-feature consent, the copy of your Premium status and app preferences. If you have
-    Premium, today's usage count for your subscription is kept so its daily limit still applies. It is deleted
-    about 2 days later or, if you use Premium again that day, about 31 days later like other usage counts.</li>
+    phone, it clears your cloud-feature consent, the copy of your Premium status, how you chose replies to speak
+    for you and app preferences. If you have Premium, today's usage count for your subscription is kept so its
+    daily limit still applies. It is deleted about 2 days later or, if you use Premium again that day, about 31
+    days later like other usage counts.</li>
   <li><strong>Premium stays active.</strong> Deleting your data does not cancel your subscription. Wazirly checks
     your purchase with Google Play again and keeps your Premium under a new install identifier, with a new
     purchase record. To stop paying, cancel the subscription in Google Play.</li>
