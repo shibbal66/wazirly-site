@@ -4,23 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wazirly Privacy Policy</title>
-<style>
-  :root { --bg: #ffffff; --fg: #1b1b1f; --muted: #5d5e66; --line: #e3e3e8; --accent: #3a5bd9; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #121316; --fg: #e6e6ea; --muted: #a3a4ad; --line: #2b2c31; --accent: #8fa6ff; }
-  }
-  body { margin: 0; background: var(--bg); color: var(--fg);
-         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 1.8rem; margin: 0 0 4px; }
-  h2 { font-size: 1.15rem; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
-  p, li { color: var(--fg); }
-  .meta { color: var(--muted); margin: 0 0 24px; }
-  a { color: var(--accent); }
-</style>
+<meta name="description" content="What Wazirly does with your information, and how to delete it.">
+<meta name="theme-color" content="#5E1A63">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon-512.png">
+<link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
 <main>
+<a class="brand" href="../"><img src="../assets/icon.svg" alt="" width="44" height="44">Wazirly</a>
 <h1>Wazirly Privacy Policy</h1>
 <p class="meta">Last updated: 20 November 2026</p>
 
@@ -28,8 +20,10 @@
 Wazirly reads the screen to explain, translate or suggest what to do. This policy explains what Wazirly
 does with your information. In short: Wazirly only looks at your screen when you ask it to, and it does not
 sell your data.</p>
+<p>You can use Wazirly without an account. If you sign in with your email, Wazirly keeps your reply settings and,
+if you turn it on, your reply memory in your account, so they work on every phone you sign in on.</p>
 
-<h2>What Wazirly reads, and when</h2>
+<h2 id="reads">What Wazirly reads, and when</h2>
 <ul>
   <li><strong>Your screen, only when you ask.</strong> Wazirly captures the screen only when you tap its
     button, and only after you allow screen sharing through Android's own consent prompt. Android shows a
@@ -40,38 +34,86 @@ sell your data.</p>
     battery, signal and notification icons) and the navigation bar when it reads or sends the screen.</li>
 </ul>
 
-<h2>What stays on your phone</h2>
+<h2 id="on-your-phone">What stays on your phone</h2>
 <p>Screen captures are kept in memory only while Wazirly's panel is open for that screen (and, after you copy
 a suggested reply, for up to 30 more seconds so you can reopen the replies), and are then discarded.
 Wazirly does not save screenshots to your phone's storage or gallery. On-device text reading does not send
 anything off your phone.</p>
-<p>Wazirly stores a few small things on your phone: whether you agreed to the cloud features, a copy of your
-Premium status, how you chose suggested replies to speak for you (as a man, as a woman, or neither), small app
-preferences (for example, how many times a tip has been shown), the random install identifier its server uses,
-and crash reports waiting to be sent (see Crash reports). Google Firebase, which Wazirly uses for its server
-and crash reports, also keeps its own app tokens on your phone.</p>
+<p>Wazirly stores a few small things on your phone:</p>
+<ul>
+  <li>whether you agreed to the cloud features;</li>
+  <li>a copy of your Premium status;</li>
+  <li>your reply settings: how suggested replies speak for you, your first name, the language Wazirly answers in,
+    and whether replies leave out emoji;</li>
+  <li>the language you speak to Wazirly in;</li>
+  <li>small app preferences, for example how many times a tip has been shown;</li>
+  <li>your choice about usage statistics and when you made it;</li>
+  <li>only if you agreed, the identifier Google Analytics uses and records waiting to be sent;</li>
+  <li>counts used to decide when to show Google Play's rating card;</li>
+  <li>crash reports waiting to be sent (see <a href="#crash-reports">Crash reports</a>).</li>
+</ul>
+<p>While you sign in, it keeps the email you asked a sign-in link for, for up to 24 hours. If reply memory is on
+and you're offline, replies you copied wait on your phone for up to 36 hours until they can be saved to your
+account. They are then deleted from the phone. Google Firebase, which Wazirly uses for its server, sign-in and
+crash reports, also keeps its own tokens on your phone, including the random install identifier or, when you're
+signed in, your account identifier.</p>
 
-<h2>Cloud features</h2>
+<h2 id="account">Your account (optional)</h2>
+<p>You can use Wazirly without an account. To keep your reply settings and reply memory on every phone, you can
+sign in with your email address. Wazirly emails you a link to sign in; there is no password.</p>
+<p>If you tap "Use the email on this phone", Android shows the Google accounts on your phone and Wazirly fills in
+the one you pick. Wazirly doesn't read your accounts otherwise.</p>
+<p>Google Firebase Authentication sends the sign-in emails. It keeps your email address and an account identifier
+until you delete your account. Wazirly uses your email only to sign you in and to send sign-in emails. It isn't
+used for marketing and isn't stored anywhere else.</p>
+<p>When you're signed in, Wazirly's server keeps your reply settings in your account, until you change them or
+delete your account, so your other phones have them:</p>
+<ul>
+  <li>how suggested replies speak for you (as a man, as a woman, or neither);</li>
+  <li>your first name, if you set it;</li>
+  <li>the language Wazirly answers in;</li>
+  <li>whether replies leave out emoji.</li>
+</ul>
+<p>Your daily usage counts and your Premium purchase record are linked to your account instead of to the
+install.</p>
+<p>In Profile, you can sign out on one phone, or on all your phones at once. A phone you sign out of forgets your
+settings and memory, and asks again before cloud features send anything.</p>
+
+<h2 id="cloud">Cloud features</h2>
+<p>The practice screens marked <em>Practice</em> use built-in examples on your phone; nothing from them is sent to
+the AI. The one <em>Sample screen</em> shown right after setup is answered for real and uses 1 answer.</p>
 <p>Some features need more help than your phone can give, for example a detailed explanation or an image
 description. When you use one of these features, Wazirly sends <strong>only what is needed for that
 request</strong> (the text read from your screen and, if the feature needs it, a smaller copy of the screen
-image, plus your question, your goal or what you want a reply to say) over an encrypted connection to Wazirly's server, which runs on Google
-Cloud. Each request also includes your phone's language setting, used only to choose the language of the
-answer. If you chose how suggested replies speak for you, "Suggest a reply" also sends that choice (as a man, as
-a woman, or neither), used only so the replies' verbs fit you, for example "aa raha hoon" or "aa rahi hoon". You
-can change it in the app at any time. The server passes the request to Anthropic, the AI provider that produces
-the answer on Wazirly's behalf, and sends the answer back to you. The features that look at the picture of your
-screen ("Describe image", "Ask a question", "Where do I tap?" and "Suggest a reply" when it can't read a chat's
-text, for example Urdu script) send it only after you agree to it in the app the first time.</p>
+image, plus what you typed or said: your question, your goal or what you want a reply to say) over an encrypted
+connection to Wazirly's server, which runs on Google Cloud. Each request also includes the language you chose for
+Wazirly's answers, or your phone's language, used only to choose the language of the answer.</p>
+<p>"Suggest a reply" also sends your reply settings, if you set them:</p>
+<ul>
+  <li>how replies speak for you, so the verbs fit you (for example "aa raha hoon" or "aa rahi hoon");</li>
+  <li>your first name, to sign emails and to spot messages meant for you.</li>
+</ul>
+<p>If reply memory is on, it also sends your reply memory (see <a href="#reply-memory">Reply memory</a>). You can
+change your reply settings in the app at any time.</p>
+<p>The server passes the request to Anthropic, the AI provider that produces the answer on Wazirly's behalf, and
+sends the answer back to you. The features that look at the picture of your screen ("Describe image", "Ask a
+question", "Where do I tap?" and "Suggest a reply" when it can't read a chat's text, for example Urdu script) send
+it only after you agree to it in the app the first time.</p>
 <ul>
   <li>Requests are not used by Wazirly to build advertising profiles and are not sold.</li>
-  <li>Wazirly's server does not store your screen text, screenshots, typed questions, answers or how you chose
-    replies to speak for you.</li>
+  <li>Wazirly's server does not store your screen text, screenshots, typed or spoken questions, or answers. If
+    you're signed in, it stores your reply settings (see <a href="#account">Your account</a>) and, only if you turn
+    it on, your reply memory (see <a href="#reply-memory">Reply memory</a>).</li>
   <li>To enforce daily limits and prevent abuse, the server keeps daily usage counts linked to a random install
-    identifier (for Premium, to the subscription). They are deleted automatically about 31 days after the day
-    they count. The install identifier itself is kept on the server until you tap Delete my data.</li>
+    identifier or, when you're signed in, to your account (for Premium, to the subscription). They are deleted
+    automatically about 31 days after the day they count. The install identifier itself is kept on the server until
+    you tap Delete my data. When you sign in, today's counts move to your account and the install identifier is
+    deleted.</li>
   <li>Server logs hold technical details only, such as the time, the result and the network address a request
-    came from. They never include your screen content and are deleted automatically after 30 days.</li>
+    came from. For each answer they also record its kind and outcome (for example "Suggest a reply, first try,
+    3 replies, 2–5 seconds"), without your install identifier or account. They never include your screen content
+    and are deleted automatically after 30 days. Wazirly keeps daily and weekly totals made from them, with no
+    identifier.</li>
   <li>Anthropic's commercial terms do not allow it to train its models on Wazirly's requests. Anthropic deletes
     requests and answers within 30 days, unless they are flagged as breaking its usage policy (then kept for up
     to 2 years) or the law requires keeping them longer. See
@@ -81,80 +123,215 @@ text, for example Urdu script) send it only after you agree to it in the app the
 <p>Wazirly tells you in the app when a feature uses the cloud. If you do not use cloud features, nothing
 from your screen leaves your phone.</p>
 
-<h2>Crash reports</h2>
+<h2 id="reply-memory">Reply memory (optional, needs an account)</h2>
+<p>If you're signed in and turn on reply memory, Wazirly remembers how you write, so suggested replies sound like
+you on every phone you sign in on. It keeps the following in your Wazirly account on Google Cloud (Firestore, in
+the United States):</p>
+<ul>
+  <li>the suggested replies you copy, as you copied them;</li>
+  <li>the name at the top of the chat you copied them in (for example "Ammi"), the app it was in, the date, and the
+    change you picked, if any (for example Shorter);</li>
+  <li>notes you write about how replies should sound;</li>
+  <li>for each person, a relation and a note, if you set them;</li>
+  <li>simple style facts that Wazirly's own code works out from those replies (for example "short replies" or
+    "writes nhi"). No AI is used to learn them.</li>
+</ul>
+<p>It never keeps the rest of the chat, the other person's messages, screenshots, phone numbers, or anything from
+an answer that showed a safety warning. Nothing is saved while memory is off or paused.</p>
+<p>Your memory is sent with "Suggest a reply" requests to the AI provider, Anthropic, under the same terms as other
+requests (see <a href="#cloud">Cloud features</a>).</p>
+<p>How long it's kept:</p>
+<ul>
+  <li>each saved reply, up to 180 days;</li>
+  <li>at most 5 replies per person and 100 in all, with the oldest removed first;</li>
+  <li>a person with no saved reply or note for 180 days is removed;</li>
+  <li>all memory is deleted 365 days after it last changed.</li>
+</ul>
+<p>You can see, edit, pause or delete any of it in Profile &rarr; Reply memory. Deleting your account deletes all
+of it.</p>
+
+<h2 id="voice">Voice commands</h2>
+<p>If you tap the microphone, Wazirly listens only while its listening sheet is open, and stops when you finish,
+tap Done or leave the sheet.</p>
+<p>Your phone's speech recognition service turns your speech into text. It does this on your phone when it can,
+and Wazirly then shows "Heard on your phone". Otherwise it uses the phone's speech service, which on most phones is
+Google's. That service may work over the internet and follows its own privacy policy.</p>
+<p>Wazirly never records, receives or stores the audio. It receives only the words, and treats them like something
+you typed:</p>
+<ul>
+  <li>they are used on your phone to choose the task;</li>
+  <li>they are sent to Wazirly's server only as your question, your goal, or what you want a reply to say, for that
+    one request; or, if you dictate a "Tell us more" comment and tap Send, as that comment (see
+    <a href="#feedback">Feedback you send</a>).</li>
+</ul>
+<p>Apart from a comment you send, Wazirly keeps the words only while its panel is open for that screen. They are
+never added to crash reports or to reply memory.</p>
+
+<h2 id="usage-stats">Usage statistics (only if you agree)</h2>
+<p>If you choose "Yes, share" (during setup, on Home, or in Profile &rarr; Privacy), Wazirly sends Google Analytics
+for Firebase short records of how you use the app. For example: that you opened Suggest a reply, that a reply was
+copied and whether it was the first, second or third, which change button you used, how long an answer took,
+whether something failed, which setup step you reached, and your Wazirly settings in general terms (plan, answer
+language, whether you're signed in, whether you chose how replies speak for you, whether reply memory is on).
+Google Analytics also records the app version, Android version, phone language, and your country and region, which
+it works out from your network address. Wazirly has turned off the collection of city and device model, Google
+signals, advertising features and data sharing with other Google products, and it turns advertising-ID collection
+off.</p>
+<p>These records never include text or images from your screen, AI answers or replies, anything you type or say,
+contact or chat names, which app you were using, how you chose replies to speak for you, or your advertising ID.
+They're linked to a random identifier for Wazirly on this phone (the Firebase app instance ID), not to your name,
+email address or Wazirly account. Wazirly uses them only to see which features help and where people get stuck.
+They are not used for ads and not sold. To learn how Google uses this data, see
+<a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps
+that use our services</a>.</p>
+<p>If you say no, or don't choose, nothing is sent for this purpose. You can change your choice at any time in
+Profile &rarr; Privacy, and turning it off stops sending at once. Signing out also turns it off and gives the phone
+a new identifier, so the next person is asked again. Records linked to this phone's identifier are deleted after
+14 months; reports with no identifier may be kept longer. To delete them sooner, tap Delete my data (if you're
+signed in, sign out first; your account and reply memory stay) or Delete account. Wazirly's server then receives
+this phone's analytics identifier only to ask Google Analytics to delete the records linked to it, and keeps only
+the identifier until Google has accepted the request. Google removes the records from reports within about 3 days
+and from its servers in its next deletion cycle. Because these records are never linked to your account or email,
+they can't be found from an emailed request.</p>
+<p>Usage statistics are meant for people 16 and over. If you're younger, please leave them off.</p>
+
+<h2 id="feedback">Feedback you send</h2>
+<p>When you tap 👍 or 👎 on an answer, and a reason if you choose one, the app sends it to Wazirly's server with the
+kind of answer, the app version, the app's language and your plan. It's recorded without your install identifier
+or account, and counted in daily totals. If you write a comment with "Tell us more" and tap Send, Wazirly stores
+the comment with the same details, linked to your install or account identifier so it can be deleted when you ask.
+Comments never include your screen or the answer, and are never sent to the AI provider. They're deleted after
+180 days, or when you tap Delete my data or Delete account. Please don't include names, numbers or messages in a
+comment.</p>
+
+<h2 id="ratings">Ratings in Google Play</h2>
+<p>Wazirly may occasionally show Google Play's rating card. Your rating and review go to Google Play under Google's
+terms; while Wazirly is in testing, they are shared privately with the developer. Wazirly decides when to show the
+card using counts kept only on your phone.</p>
+
+<h2 id="crash-reports">Crash reports</h2>
 <p>If Wazirly crashes or runs into an error, it sends a crash report to Google Firebase Crashlytics so the
 problem can be found and fixed. A report contains technical details only: what went wrong in the app's code,
 the app version, your phone model and Android version, details such as screen size and memory, a random
 Crashlytics install identifier, and short notes about what Wazirly was doing (for example "read screen" or how
 long a step took). Wazirly never adds the text or images from your screen, AI answers or anything you type to a
-crash report. Crash reports are kept for 90 days and are not used for advertising.</p>
+crash report. If you agreed to usage statistics, crash reports also include the short usage records described
+above from just before the crash. Crash reports are kept for 90 days and are not used for advertising.</p>
 
-<h2>Sensitive screens</h2>
+<h2 id="sensitive-screens">Sensitive screens</h2>
 <p>Please do not use Wazirly on screens showing passwords, one-time codes, card numbers or other secrets.
 Recent Android versions hide some of this information from screen sharing automatically, but not every
 app marks its sensitive fields.</p>
 
-<h2>Premium and purchases</h2>
+<h2 id="premium">Premium and purchases</h2>
 <p>Wazirly Premium is a subscription sold through Google Play. Google Play handles the payment; Wazirly never
 sees your card or payment details. To confirm a subscription, the app sends Wazirly's server the purchase token
 Google Play gives it, and the server checks it with Google Play. The server keeps that token, linked to your
-random install identifier, while the subscription lasts, so it can give you Premium's daily limits and see when
-it renews or ends. The server deletes the token about 3 to 4 days after the paid period ends, even if you don't
-use Wazirly again. To delete it sooner, tap Delete my data. You can cancel at any time in Google Play.</p>
+random install identifier or, when you're signed in, to your account, while the subscription lasts, so it can give
+you Premium's daily limits and see when it renews or ends. When you're signed in, Premium works on every phone
+signed in to your account. The server deletes the token about 3 to 4 days after the paid period ends, even if you
+don't use Wazirly again. To delete it sooner, tap Delete my data or Delete account. You can cancel at any time in
+Google Play.</p>
+<p>When you buy Premium, Wazirly gives Google Play a scrambled, one-way form (a hash) of your install or account
+identifier, so the purchase can be matched to you later. It can't be turned back into the identifier.</p>
 
-<h2>Ads</h2>
+<h2 id="ads">Ads</h2>
 <p>Wazirly may in the future show ads to free users (Premium has none). If that happens, ads may be served by
 Google AdMob, which may use your device's advertising ID according to
 <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Where required, Wazirly will ask for
 your consent first. This policy will be updated before ads are added.</p>
 
-<h2>Permissions Wazirly uses</h2>
+<h2 id="permissions">Permissions Wazirly uses</h2>
 <ul>
   <li><strong>Display over other apps</strong>: to show the floating help button and answers on top of the
     app you are using.</li>
   <li><strong>Screen sharing (media projection) and a foreground service</strong>: to capture the screen when
     you tap the button.</li>
   <li><strong>Notifications</strong>: to show that Wazirly is running and let you stop it.</li>
+  <li><strong>Microphone</strong>: only after you tap the mic, while Wazirly's listening sheet is open, to turn
+    what you say into text.</li>
   <li><strong>Internet</strong>: for cloud features and app services.</li>
 </ul>
 
-<h2>Sharing</h2>
+<h2 id="sharing">Sharing</h2>
 <p>Wazirly does not sell or rent your information. It shares information only with the service providers
-described above (Google Cloud to run Wazirly's server, Anthropic to answer your requests, Google Play for
-purchases, and Google Firebase Crashlytics for crash reports), or when required by law.</p>
+described above (Google Cloud to run Wazirly's server, Anthropic to answer your requests, Google Firebase
+Authentication to sign you in and send sign-in emails, Google Play for purchases, Google Firebase Crashlytics for
+crash reports, and Google Analytics for Firebase, for usage statistics, only if you agree), or when required by
+law.</p>
+
+<h2 id="your-rights">Legal bases, transfers and your rights</h2>
+<p>For the EU, the UK and places with similar laws:</p>
+<ul>
+  <li><strong>Your consent:</strong> usage statistics, reply memory, and sending screenshots. You can withdraw
+    consent at any time in Profile. That doesn't affect what was done before.</li>
+  <li><strong>Providing the service you ask for:</strong> AI answers, sign-in and your account settings, and
+    Premium.</li>
+  <li><strong>Legitimate interests</strong> in running Wazirly safely and within its budget, and improving it:
+    usage counts and daily limits, server logs and the daily totals made from them, crash reports, and the votes
+    and comments you choose to send. You can object at any time by writing to the contact address below. The usage
+    counts that enforce free limits can't be switched off while you use AI help, but you can delete them with
+    Delete my data.</li>
+</ul>
+<p><strong>Transfers.</strong> Google (Firebase and Cloud) and Anthropic process data in the United States. Where
+EU or UK law requires it, these transfers rely on the providers' standard contractual clauses or, where the
+provider is certified, the EU–US Data Privacy Framework and its UK extension.</p>
+<p><strong>Your rights.</strong> You can ask for access to, correction of, deletion of, or a copy of your data, ask
+Wazirly to restrict or stop using it, and withdraw consent. Most of this works in the app (Profile, Delete my data,
+Delete account); otherwise, email the contact address below. You can also complain to your data protection
+authority (in the UK, the ICO).</p>
 
 <h2 id="delete-data">Your choices and deleting your data</h2>
-<p>Wazirly does not require an account. You can stop screen sharing at any time from the notification and
-revoke permissions in Android settings.</p>
+<p>An account is optional. You can stop screen sharing at any time from the notification and revoke permissions in
+Android settings.</p>
 <p>To delete your Wazirly data:</p>
 <ol>
-  <li><strong>In the app</strong>: tap <strong>Delete my data</strong>. If you don't see it, update Wazirly from
-    Google Play first (versions 0.3.0 and earlier don't have it). This deletes, on Wazirly's server, the usage
-    counts and Premium purchase record linked to your install and the random install identifier itself. On your
-    phone, it clears your cloud-feature consent, the copy of your Premium status, how you chose replies to speak
-    for you and app preferences. If you have Premium, today's usage count for your subscription is kept so its
-    daily limit still applies. It is deleted about 2 days later or, if you use Premium again that day, about 31
-    days later like other usage counts.</li>
+  <li><strong>Delete your account</strong> (if you signed in). In the app: Profile &rarr; Your data &rarr; Delete
+    account. Without the app: see
+    <a href="https://shibbal66.github.io/wazirly-site/delete-account/">Delete your Wazirly account</a>.
+    <p>This deletes, from Wazirly's server, on every phone:</p>
+    <ul>
+      <li>your email sign-in;</li>
+      <li>your reply settings;</li>
+      <li>your reply memory;</li>
+      <li>your usage counts;</li>
+      <li>your Premium purchase record.</li>
+    </ul>
+    <p>On this phone, it clears what's listed under "<a href="#on-your-phone">What stays on your phone</a>". It
+    also asks Google Analytics to delete the usage statistics linked to this phone, deletes comments you sent, and
+    resets the identifier.</p></li>
+  <li><strong>Delete my data</strong> (if you didn't sign in): Profile &rarr; Your data &rarr; Delete my data. If
+    you don't see it, update Wazirly from Google Play first (versions 0.3.0 and earlier don't have it). This
+    deletes, on Wazirly's server, the usage counts and Premium purchase record linked to your install and the
+    random install identifier itself. On your phone, it clears your cloud-feature consent, the copy of your Premium
+    status, your reply settings and app preferences. If you have Premium, today's usage count for your
+    subscription is kept so its daily limit still applies. It is deleted about 2 days later or, if you use Premium
+    again that day, about 31 days later like other usage counts. It also asks Google Analytics to delete the usage
+    statistics linked to this phone, deletes comments you sent, and resets the identifier.</li>
+  <li><strong>Delete reply memory and keep your account:</strong> Profile &rarr; Reply memory. You can delete
+    single replies, people or notes, or tap Delete all memory.</li>
   <li><strong>Premium stays active.</strong> Deleting your data does not cancel your subscription. Wazirly checks
     your purchase with Google Play again and keeps your Premium under a new install identifier, with a new
     purchase record. To stop paying, cancel the subscription in Google Play.</li>
   <li><strong>Data on your phone</strong>: open Android Settings &rarr; Apps &rarr; Wazirly &rarr; Storage &rarr;
     Clear storage, or uninstall Wazirly. This removes only what is on your phone: server records stay, and the
-    server can then no longer tell which were yours. Tap Delete my data first.</li>
+    server can then no longer tell which were yours. Tap Delete account or Delete my data first.</li>
   <li><strong>Automatic deletion</strong>, even without a request: usage counts about 31 days after the day they
-    count, Premium purchase tokens about 3 to 4 days after the paid period ends, and server logs after 30 days.</li>
+    count, Premium purchase tokens about 3 to 4 days after the paid period ends, server logs after 30 days, reply
+    memory as described under <a href="#reply-memory">Reply memory</a>, usage statistics linked to the phone's
+    identifier after 14 months, and comments after 180 days.</li>
   <li><strong>Crash reports</strong> are not linked to you and are deleted automatically after 90 days.</li>
 </ol>
 <p>Questions about deleting your data: email
 <a href="mailto:shibbalfarooq66@gmail.com?subject=Wazirly%20data%20deletion">shibbalfarooq66@gmail.com</a>.</p>
 
-<h2>Children</h2>
+<h2 id="children">Children</h2>
 <p>Wazirly is not directed at children under 13 and does not knowingly collect information from them.</p>
 
-<h2>Changes</h2>
+<h2 id="changes">Changes</h2>
 <p>If this policy changes, the new version will be posted on this page with a new "Last updated" date.</p>
 
-<h2>Contact</h2>
+<h2 id="contact">Contact</h2>
 <p>Questions about privacy or your data: <a href="mailto:shibbalfarooq66@gmail.com">shibbalfarooq66@gmail.com</a></p>
 </main>
 </body>
