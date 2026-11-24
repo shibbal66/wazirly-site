@@ -14,7 +14,7 @@
 <main>
 <a class="brand" href="../"><img src="../assets/icon.svg" alt="" width="44" height="44">Wazirly</a>
 <h1>Wazirly Privacy Policy</h1>
-<p class="meta">Last updated: 24 November 2026</p>
+<p class="meta">Last updated: 25 November 2026</p>
 
 <p>Wazirly is an Android app that helps you with whatever is on your screen. You tap a floating button and
 Wazirly reads the screen to explain, translate or suggest what to do. This policy explains what Wazirly
@@ -60,12 +60,22 @@ signed in, your account identifier.</p>
 
 <h2 id="account">Your account (optional)</h2>
 <p>You can use Wazirly without an account. To keep your reply settings and reply memory on every phone, you can
-sign in with your email address. Wazirly emails you a link to sign in; there is no password.</p>
+sign in with Google or with your email address. There is no password.</p>
+<p><strong>Continue with Google.</strong> Android shows the Google accounts on your phone. When you pick one, Google
+confirms your email address to Wazirly and also shares your name and profile picture. Google Firebase Authentication
+keeps them with your account; Wazirly uses only your email address.</p>
+<p><strong>Continue with email.</strong> Wazirly emails you a secure sign-in link from noreply@wazirly.com. Tap it on
+your phone to sign in. If you open it on another device, the page shows a 6-digit code to type into Wazirly on your
+phone. Resend, an email delivery service, sends these emails: it receives your email address and the email, and
+keeps delivery records under <a href="https://resend.com/legal/privacy-policy">its own privacy policy</a>. Wazirly's
+server keeps your email address with a scrambled, one-way form (a hash) of the link and code for 15 minutes; they
+are then deleted automatically, usually within a day. To stop abuse, it also keeps a count of sign-in emails per
+address, stored under a hash of the address, for about a day.</p>
 <p>If you tap "Use the email on this phone", Android shows the Google accounts on your phone and Wazirly fills in
 the one you pick. Wazirly doesn't read your accounts otherwise.</p>
-<p>Google Firebase Authentication sends the sign-in emails. It keeps your email address and an account identifier
-until you delete your account. Wazirly uses your email only to sign you in and to send sign-in emails. It isn't
-used for marketing and isn't stored anywhere else.</p>
+<p>Google Firebase Authentication keeps your email address and an account identifier until you delete your
+account. Wazirly uses your email only to sign you in and to send sign-in emails. It isn't used for marketing and
+isn't stored anywhere else.</p>
 <p>When you're signed in, Wazirly's server keeps your reply settings in your account, until you change them or
 delete your account, so your other phones have them:</p>
 <ul>
@@ -256,7 +266,7 @@ your consent first. This policy will be updated before ads are added.</p>
 <h2 id="sharing">Sharing</h2>
 <p>Wazirly does not sell or rent your information. It shares information only with the service providers
 described above (Google Cloud to run Wazirly's server, Anthropic to answer your requests, Google Firebase
-Authentication to sign you in and send sign-in emails, Google Play for purchases, Google Firebase Crashlytics for
+Authentication to sign you in, Resend to send sign-in emails, Google Play for purchases, Google Firebase Crashlytics for
 crash reports, and Google Analytics for Firebase, for usage statistics, only if you agree), or when required by
 law.</p>
 
@@ -273,7 +283,8 @@ law.</p>
     counts that enforce free limits can't be switched off while you use AI help, but you can delete them with
     Delete my data.</li>
 </ul>
-<p><strong>Transfers.</strong> Google (Firebase and Cloud) and Anthropic process data in the United States. Where
+<p><strong>Transfers.</strong> Google (Firebase and Cloud), Anthropic and Resend process data in the United States
+and, for Resend's email sending, in Japan. Where
 EU or UK law requires it, these transfers rely on the providers' standard contractual clauses or, where the
 provider is certified, the EU–US Data Privacy Framework and its UK extension.</p>
 <p><strong>Your rights.</strong> You can ask for access to, correction of, deletion of, or a copy of your data, ask
