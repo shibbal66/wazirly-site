@@ -110,7 +110,11 @@ Wazirly's answers, or your phone's language, used only to choose the language of
 <p>If reply memory is on, it also sends your reply memory (see <a href="#reply-memory">Reply memory</a>). You can
 change your reply settings in the app at any time.</p>
 <p>The server passes the request to Anthropic, the AI provider that produces the answer on Wazirly's behalf, and
-sends the answer back to you. The features that look at the picture of your screen ("Describe image", "Ask a
+sends the answer back to you. In versions from 0.5.3, a Premium answer to "Ask a question" or "Where do I tap?" may
+also search the web when what's on your screen isn't enough (for example a current price, or how an app's menus are
+arranged): the AI writes a short search query and Anthropic's web search runs it. The AI is told never to put personal
+details from your screen, such as names, phone or account numbers, addresses or messages, into a query. The answer
+shows the web pages it used. The features that look at the picture of your screen ("Describe image", "Ask a
 question", "Where do I tap?" and "Suggest a reply" when it can't read a chat's text, for example Urdu script) send
 it only after you agree to it in the app the first time.</p>
 <ul>
