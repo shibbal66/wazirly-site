@@ -3,21 +3,391 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wazirly</title>
-<meta name="description" content="Wazirly helps with whatever is on your screen, in any app.">
+<title>Wazirly: tap for help on any screen, in any app</title>
+<meta name="description" content="Wazirly is a button that sits over any app on your Android phone. Tap it to check if a message is a scam, get a reply written for you, or be shown exactly where to tap. Join the waitlist.">
 <meta name="theme-color" content="#5E1A63">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Wazirly">
+<meta property="og:title" content="Stuck on your phone? Tap the Wazirly button.">
+<meta property="og:description" content="Scam check, replies written for you, and step-by-step help, over any app. Join the waitlist for early access on Google Play.">
+<meta property="og:image" content="https://shibbal66.github.io/wazirly-site/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://shibbal66.github.io/wazirly-site/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/icon-512.png">
 <link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/landing.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Wazirly",
+  "operatingSystem": "Android 8.0 or newer",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "A button that sits over any app. Tap it for a scam check, a reply written in your tone, step-by-step help on where to tap, a summary or a translation of what's on your screen.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "url": "https://shibbal66.github.io/wazirly-site/",
+  "image": "https://shibbal66.github.io/wazirly-site/assets/og.jpg"
+}
+</script>
 </head>
 <body>
-<main>
-<a class="brand" href="./"><img src="assets/icon.svg" alt="" width="44" height="44">Wazirly</a>
-<h1>Help with whatever is on your screen, in any app.</h1>
-<ul>
-  <li><a href="privacy/">Privacy Policy</a></li>
-  <li><a href="delete-account/">Delete your Wazirly account</a></li>
-</ul>
+<a class="skip" href="#top">Skip to the page</a>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/icon.svg" alt="" width="36" height="36">Wazirly</a>
+    <nav aria-label="On this page">
+      <a href="#features">What it does</a>
+      <a href="#how">How it works</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#plans">Prices</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <a class="button light" href="#join">Join the waitlist</a>
+  </div>
+</header>
+
+<main class="landing" id="top">
+
+<section class="hero-band" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Early access on Google Play</p>
+      <h1 id="hero-title">Stuck on your phone? Tap the Wazirly button.</h1>
+      <p class="lede">Wazirly sits over any app. Tap it and it reads what's on your screen, then helps in plain words:
+        it checks if a message is a scam, writes your reply, and shows you exactly where to tap.</p>
+      <div class="cta-row">
+        <a class="button light big" href="#join">Join the waitlist</a>
+        <a class="button ghost big" href="#how">See how it works</a>
+      </div>
+      <p class="fine">Free to start: 10 answers a day, no card. For Android 8.0 or newer.</p>
+    </div>
+    <div class="phone">
+      <video autoplay muted loop playsinline controls preload="metadata" poster="assets/shots/replies.jpg" aria-label="A one-minute video: Wazirly suggests replies in a chat, checks a text for a scam, guides you through settings step by step, and sums up an email.">
+        <source src="assets/video/how-wazirly-works.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="why-title">
+  <div class="wrap">
+    <h2 id="why-title">Phones keep getting harder. Scams keep getting better.</h2>
+    <p class="intro">Scam texts look real, apps move their buttons, and long letters hide the one line that matters. Most
+      of us end up guessing, or asking someone, again.</p>
+    <div class="stats">
+      <div class="stat">
+        <p class="big">$15.9 billion</p>
+        <p>lost to fraud reported by Americans in 2025, a record, and text messages were the most common way in.</p>
+        <p class="source">Source: <a href="https://www.ftc.gov/system/files/ftc_gov/pdf/ftc-testimony-jec-hearing-on-the-rising-scam-economy.pdf">US Federal Trade Commission</a></p>
+      </div>
+      <div class="stat">
+        <p class="big">£576 million</p>
+        <p>lost in the UK in 2025 to scams that trick people into sending money themselves.</p>
+        <p class="source">Source: <a href="https://www.ukfinance.org.uk/news-and-insight/press-release/fraud-report-2026-press-release">UK Finance, Annual Fraud Report 2026</a></p>
+      </div>
+      <div class="stat">
+        <p class="big">1 in 3</p>
+        <p>UK adults helped someone else get something done online last year, most often a parent.</p>
+        <p class="source">Source: <a href="https://www.gov.uk/government/publications/how-people-are-helped-online-informal-and-proxy-digital-support/informal-and-proxy-support-for-digital-inclusion-final-report">UK Department for Science, Innovation and Technology, 2026</a></p>
+      </div>
+    </div>
+    <p class="also">In Canada, people reported a record C$704 million lost to fraud in 2025
+      (<a href="https://antifraudcentre-centreantifraude.ca/features-vedette/2026/02/top-fraud-2025-fraudes-plus-courantes-eng.htm">Canadian Anti-Fraud Centre</a>), and in Australia A$2.18 billion
+      (<a href="https://www.nasc.gov.au/system/files/targeting-scams-report-2025.pdf">National Anti-Scam Centre</a>).</p>
+  </div>
+</section>
+
+<section class="section alt" id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <h2 id="features-title">One button. The help you need, right where you're stuck.</h2>
+    <p class="intro">No copying, no screenshots, no switching apps. Wazirly works over your chats, texts, emails,
+      shopping and the other apps you use every day.</p>
+
+    <div class="feature">
+      <div class="shot"><img src="assets/shots/scam.jpg" alt="Wazirly's Scam check over a text that says money was sent by mistake: Strong warning signs, the reasons, and what to do." width="540" height="1080" loading="lazy"></div>
+      <div>
+        <p class="tag">Scam check</p>
+        <h3>Not sure about a message? Ask before you tap.</h3>
+        <p>Wazirly reads the text, email or post on your screen and tells you how risky it looks, the warning signs it
+          found, and what to do next. It works in WhatsApp, Messages, email and social apps, where spam filters stop.</p>
+        <ul class="ticks">
+          <li>Plain words: strong warning signs, some, or none it can see</li>
+          <li>The exact phrases that gave it away, like "sent by mistake" or "your account is locked"</li>
+          <li>One clear next step: don't pay, check with your bank, block, report</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature flip">
+      <div class="shot"><img src="assets/shots/replies.jpg" alt="Suggest a reply over a family chat: three ready replies, with Shorter and More formal buttons." width="540" height="1080" loading="lazy"></div>
+      <div>
+        <p class="tag">Suggest a reply</p>
+        <h3>Three replies in your own voice. Pick one, send.</h3>
+        <p>Wazirly reads the chat, works out what's being asked, and writes three different replies: yes, no, or
+          something in between. Copy the one you like and paste it in.</p>
+        <ul class="ticks">
+          <li>Make it shorter, warmer or more formal with one tap</li>
+          <li>Tell it your point in a few words, and it writes the message</li>
+          <li>Follows the chat you're in: family, friends, work or a seller</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="shot"><img src="assets/shots/guide.jpg" alt="Where do I tap: a ring around Display in a settings list, and the step that says to tap it." width="540" height="1080" loading="lazy"></div>
+      <div>
+        <p class="tag">Where do I tap?</p>
+        <h3>Say what you want to do. Wazirly shows the way, one tap at a time.</h3>
+        <p>"Turn on dark mode", "cancel my subscription", "find my order". Wazirly puts a ring around the next
+          thing to tap, then follows you to the next screen until it's done.</p>
+        <ul class="ticks">
+          <li>Type it or just say it</li>
+          <li>You stay in control: Wazirly shows the way and never taps for you</li>
+          <li>Lost? It notices and helps you back on track</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="more">
+      <div class="card">
+        <h3>Summary</h3>
+        <p>A long email, a busy group chat, a confusing bill: get the key points, the deadline and the amount first.</p>
+      </div>
+      <div class="card">
+        <h3>Translate</h3>
+        <p>Read what's on your screen in English, <bdi lang="ur">اردو</bdi> or Roman Urdu, without leaving the app you're in.</p>
+      </div>
+      <div class="card">
+        <h3>Ask anything</h3>
+        <p>"What does this mean?" "Is this the right form?" Ask about what's on the screen, or have it describe the
+          pictures.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <h2 id="how-title" class="center">How it works</h2>
+    <p class="intro center">Set it up once. After that, help is one tap away in every app.</p>
+    <ol class="steps">
+      <li>
+        <h3>Turn on Wazirly</h3>
+        <p>Install it from Google Play and tap Start. Android asks you to let Wazirly show its button over your apps
+          and see your screen when you ask for help.</p>
+      </li>
+      <li>
+        <h3>Tap the button on any screen</h3>
+        <p>It floats at the edge of your screen. Move it wherever you like, or hold it to speak.</p>
+      </li>
+      <li>
+        <h3>Pick what you need</h3>
+        <p>Scam check, a reply, where to tap, a summary. The answer comes in seconds, in plain words.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="section alt" aria-labelledby="family-title">
+  <div class="wrap family">
+    <div>
+      <h2 id="family-title">Set it up once for someone you love.</h2>
+      <p class="quote">"Is this text from the bank real?" "How do I send a photo?" "Where's the button gone?"</p>
+      <p>If you're the person everyone calls for phone help, install Wazirly on their phone and turn it on together.
+        They get a calm second opinion on every suspicious message and patient, step-by-step help, any time of day,
+        without waiting for you to pick up.</p>
+      <a class="button big" href="#join">Join the waitlist for them</a>
+    </div>
+    <div class="shot"><img src="assets/shots/button.jpg" alt="The Wazirly button at the edge of a chat, with the tag: Tap me for help on any screen." width="540" height="1080" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="section" id="privacy" aria-labelledby="privacy-title">
+  <div class="wrap">
+    <h2 id="privacy-title">Private by design</h2>
+    <p class="intro">Your screen is personal. Wazirly is built to read as little as it can, only when you ask.</p>
+    <div class="promises">
+      <div class="card">
+        <h3>Only when you tap</h3>
+        <p>Wazirly reads your screen only when you tap its button, after Android's own permission prompt. It doesn't
+          watch in the background.</p>
+      </div>
+      <div class="card">
+        <h3>Pictures only with your OK</h3>
+        <p>Most answers use just the words on your screen. When a picture would help, Wazirly asks first.</p>
+      </div>
+      <div class="card">
+        <h3>Never sold, no ads, no training</h3>
+        <p>Your requests aren't sold or used for ads, and the AI provider isn't allowed to train its models on them.</p>
+      </div>
+      <div class="card">
+        <h3>Delete it any time</h3>
+        <p>One tap in the app deletes your data. You don't need an account to use Wazirly.</p>
+      </div>
+    </div>
+    <p class="also">Android hides Wazirly in your phone's own Settings and on some banking and password screens, to keep you
+      safe. The full details are in the <a href="privacy/">privacy policy</a>.</p>
+  </div>
+</section>
+
+<section class="section alt" id="plans" aria-labelledby="plans-title">
+  <div class="wrap center">
+    <h2 id="plans-title">Start free. Upgrade when you need more.</h2>
+    <p class="intro">Every feature is in the free plan. Premium is for people who use Wazirly all day.</p>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <p class="price">Free, no card needed</p>
+        <ul class="ticks">
+          <li>10 answers a day</li>
+          <li>Up to 3 of them can look at pictures on your screen</li>
+          <li>Scam check, replies, where to tap, summary, translate and more</li>
+        </ul>
+      </div>
+      <div class="plan premium">
+        <h3>Premium</h3>
+        <p class="price">Monthly or yearly, through Google Play</p>
+        <ul class="ticks">
+          <li>50 answers a day</li>
+          <li>Up to 10 of them can look at pictures on your screen</li>
+          <li>Answers can search the web for current facts and an app's real menus</li>
+        </ul>
+      </div>
+    </div>
+    <p class="testing-note"><strong>Early-access bonus:</strong> while Wazirly is in testing, testers get Premium free.</p>
+  </div>
+</section>
+
+<section class="section join" id="join" aria-labelledby="join-title">
+  <div class="wrap join-grid">
+    <div>
+      <h2 id="join-title">Join the waitlist</h2>
+      <p class="intro">Wazirly is in early access on Google Play. Leave your email and we'll send your invite, or tell
+        you the moment it's ready for your phone.</p>
+      <ul class="points">
+        <li>Early access to the Android app, with Premium free while it's in testing</li>
+        <li>On iPhone? Tell us below. iPhone doesn't let apps help over other apps yet, and you'll be first to hear
+          when Wazirly works there</li>
+        <li>One or two emails, no spam, unsubscribe any time</li>
+      </ul>
+      <p>Already invited? <a href="https://play.google.com/store/apps/details?id=com.sharkstack.wazirly">Get Wazirly on Google Play</a></p>
+    </div>
+    <form class="join-form" method="post" action="https://us-central1-wazirly-prod.cloudfunctions.net/joinWaitlist">
+      <div class="field">
+        <label for="email">Your email</label>
+        <input id="email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required placeholder="name@example.com">
+      </div>
+      <fieldset>
+        <legend>Your phone</legend>
+        <div class="choices">
+          <div class="choice"><input id="phone-android" name="phone" type="radio" value="android" checked><label for="phone-android">Android</label></div>
+          <div class="choice"><input id="phone-iphone" name="phone" type="radio" value="iphone"><label for="phone-iphone">iPhone</label></div>
+          <div class="choice"><input id="phone-other" name="phone" type="radio" value="other"><label for="phone-other">Other</label></div>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="country">Where you live</label>
+        <select id="country" name="country" required>
+          <option value="US">United States</option>
+          <option value="GB">United Kingdom</option>
+          <option value="CA">Canada</option>
+          <option value="AU">Australia</option>
+          <option value="PK">Pakistan</option>
+          <option value="other">Somewhere else</option>
+        </select>
+      </div>
+      <div class="hp" aria-hidden="true">
+        <label for="website">Leave this empty</label>
+        <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <div class="consent">
+        <input id="consent" name="consent" type="checkbox" value="yes" required>
+        <label for="consent">Email me my invite and news of Wazirly's launch. I can unsubscribe any time.</label>
+      </div>
+      <button class="button" type="submit">Join the waitlist</button>
+      <p class="note">We use your email only for Wazirly's early access and launch. See the
+        <a href="privacy/#waitlist">privacy policy</a>.</p>
+    </form>
+  </div>
+</section>
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <h2 id="faq-title" class="center">Questions</h2>
+    <div class="faq">
+      <details>
+        <summary>What exactly is Wazirly?</summary>
+        <p>An Android app that puts a small button over every app on your phone. When you're stuck, tap it: Wazirly
+          reads what's on your screen and helps with what's in front of you, from a suspicious text to a reply you
+          don't know how to write.</p>
+      </details>
+      <details>
+        <summary>Is it free?</summary>
+        <p>Yes. The free plan gives you 10 answers a day with every feature, and no card is needed. Premium gives you 50 a
+          day and answers that can search the web. While Wazirly is in testing, testers get Premium free.</p>
+      </details>
+      <details>
+        <summary>Which phones does it work on?</summary>
+        <p>Android phones with Android 8.0 or newer, which is nearly every Android phone in use today, not just the
+          latest models. It isn't available on iPhone yet, because iPhone doesn't let apps show a button over other
+          apps. Join the waitlist and choose iPhone to hear first if that changes.</p>
+      </details>
+      <details>
+        <summary>Does it work in every app?</summary>
+        <p>In almost every app: chats, texts, email, social media, shopping, government and health sites. For your
+          safety, Android hides it in your phone's own Settings app and on some banking and password screens.</p>
+      </details>
+      <details>
+        <summary>What does Wazirly see, and who else does?</summary>
+        <p>Only the screen you're on, and only when you tap its button. To write the answer, the words on that screen
+          go to Wazirly's server and an AI model. They aren't sold, used for ads, or used to train AI. Pictures are
+          sent only if you agree. The <a href="privacy/">privacy policy</a> has every detail.</p>
+      </details>
+      <details>
+        <summary>Is the scam check always right?</summary>
+        <p>No checker is. Wazirly tells you the warning signs it can see and what to do, as a second opinion. If
+          you're unsure, don't pay or share codes, and check with your bank or the company using a number you already
+          trust.</p>
+      </details>
+      <details>
+        <summary>Which languages does it speak?</summary>
+        <p>Wazirly's screens and answers come in English, Urdu (<bdi lang="ur">اردو</bdi>) and Roman Urdu. It can read and translate what's on
+          your screen in many more.</p>
+      </details>
+      <details>
+        <summary>How do I get it now?</summary>
+        <p>Join the waitlist above. We'll email your invite to the Google Play early-access test. Once you've accepted it,
+          you install Wazirly from Google Play like any other app.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section alt closing" aria-labelledby="closing-title">
+  <div class="wrap">
+    <img src="assets/icon-512.png" alt="" width="84" height="84">
+    <h2 id="closing-title">Next time you're stuck, tap the Wazirly button.</h2>
+    <p class="intro center">Help with anything on your screen, in any app.</p>
+    <a class="button big" href="#join">Join the waitlist</a>
+  </div>
+</section>
+
 </main>
+
+<footer class="footer">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/icon.svg" alt="" width="36" height="36">Wazirly</a>
+    <nav aria-label="About Wazirly">
+      <a href="privacy/">Privacy Policy</a>
+      <a href="delete-account/">Delete your Wazirly account</a>
+      <a href="https://play.google.com/store/apps/details?id=com.sharkstack.wazirly">Google Play</a>
+      <a href="mailto:shibbalfarooq66@gmail.com">Contact</a>
+    </nav>
+    <p>© 2026 Sharkstack Developments</p>
+  </div>
+</footer>
 </body>
 </html>
