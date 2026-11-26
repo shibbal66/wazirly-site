@@ -10,10 +10,11 @@
 - Privacy: reads the screen only when its button is tapped; pictures go only with the person's permission; nothing is sold, used for ads, or used to train AI; everything can be deleted from the app or at https://wazirly.com/delete-account/.
 - Where it works: over almost every app (chats, texts, email, social, shopping, government and health sites). Android hides it in the phone's own Settings and on some banking and password screens.
 - Status: early access through a closed test on Google Play; join at https://wazirly.com/#join.
-- Developer: Sharkstack Developments. Contact: info@sharkstack.dev.
+- Developer: Sharkstack Developments, founded in 2026 by Shibbal Farooq, who builds the app and answers support personally. Contact: info@sharkstack.dev. About: https://wazirly.com/about/
 
 ## Pages
 
 - [Home](https://wazirly.com/): what it does, a demo you can tap, prices, the waitlist, questions.
+- [About](https://wazirly.com/about/): who makes Wazirly and why.
 - [Privacy policy](https://wazirly.com/privacy/): what is read, kept, and for how long.
 - [Delete your account](https://wazirly.com/delete-account/): how to delete everything.
