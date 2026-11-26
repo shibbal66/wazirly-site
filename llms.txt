@@ -21,6 +21,7 @@ Also described as: an AI phone assistant for Android, an on-screen AI assistant,
 - [AI reply writer](https://wazirly.com/reply/): three replies in your tone inside any chat.
 - [Where do I tap?](https://wazirly.com/where-do-i-tap/): step-by-step help in any Android app, and its limits.
 - [For parents and grandparents](https://wazirly.com/for-parents/): setting it up once on a family member's phone.
+- [Wazirly vs ChatGPT, Gemini and Copilot](https://wazirly.com/compare/): an on-screen assistant against chat assistants, in one table.
 - [About](https://wazirly.com/about/): who makes Wazirly and why.
 - [Privacy policy](https://wazirly.com/privacy/): what is read, kept, and for how long.
 - [Delete your account](https://wazirly.com/delete-account/): how to delete everything.

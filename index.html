@@ -278,7 +278,7 @@
     </div>
     <figure class="stage">
       <div class="device">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/shots/replies.jpg" aria-label="A one-minute video: Wazirly suggests replies in a chat, checks a text for a scam, and guides a tap through Settings.">
+        <video id="hero-video" muted loop playsinline preload="none" poster="assets/shots/replies.jpg" aria-label="A one-minute video: Wazirly suggests replies in a chat, checks a text for a scam, and guides a tap through Settings.">
           <source src="assets/video/how-wazirly-works.mp4" type="video/mp4">
         </video>
       </div>
@@ -677,6 +677,7 @@
       <li class="reveal" style="--i: 1"><h3><a href="reply/">An AI reply writer inside any chat</a></h3><p>Three replies in your tone for WhatsApp, Messages, email and Marketplace, and how to make them shorter, warmer or more formal.</p></li>
       <li class="reveal" style="--i: 2"><h3><a href="where-do-i-tap/">Where do I tap?</a></h3><p>Say what you want to do and get a ring around the next button, screen by screen. Where it works, and where Android hides it.</p></li>
       <li class="reveal" style="--i: 3"><h3><a href="for-parents/">For parents and grandparents</a></h3><p>Set it up once on their phone: a scam check before they tap, replies written for them, help on where to tap.</p></li>
+      <li class="reveal" style="--i: 4"><h3><a href="compare/">Wazirly vs ChatGPT, Gemini and Copilot</a></h3><p>What an on-screen assistant does that a chat assistant can't, what it doesn't try to do, and which to use when.</p></li>
     </ul>
   </div>
 </section>
@@ -700,6 +701,7 @@
       <a href="reply/">AI reply writer</a>
       <a href="where-do-i-tap/">Where do I tap?</a>
       <a href="for-parents/">For parents</a>
+      <a href="compare/">Wazirly vs chat assistants</a>
       <a href="about/">About</a>
       <a href="privacy/">Privacy Policy</a>
       <a href="delete-account/">Delete your Wazirly account</a>
@@ -731,6 +733,25 @@
   doc.querySelectorAll("#menu a").forEach(function (a) {
     a.addEventListener("click", function () { topbar.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); });
   });
+
+  // The hero video plays once it's on screen, not before: the poster is what the page paints first, and the file
+  // never loads on a connection the person set to save data, or when they asked for less motion.
+  var video = $("hero-video");
+  if (video && !reduce && !(navigator.connection && navigator.connection.saveData)) {
+    var start = function () {
+      video.preload = "auto";
+      var p = video.play();
+      if (p && p.catch) p.catch(function () {});
+    };
+    if ("IntersectionObserver" in window) {
+      var vo = new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) { vo.disconnect(); start(); }
+      }, { threshold: 0.25 });
+      vo.observe(video);
+    } else {
+      start();
+    }
+  }
 
   // Reveals, as they scroll into view.
   if ("IntersectionObserver" in window) {
