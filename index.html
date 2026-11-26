@@ -1,24 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wazirly: tap for help on any screen, in any app</title>
 <meta name="description" content="Wazirly is a button that sits over any app on your Android phone. Tap it to check if a message is a scam, get a reply written for you, or be shown exactly where to tap. Join the waitlist.">
-<meta name="theme-color" content="#5E1A63">
+<meta name="theme-color" content="#150A18">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Wazirly">
 <meta property="og:title" content="Stuck on your phone? Tap the Wazirly button.">
 <meta property="og:description" content="Scam check, replies written for you, and step-by-step help, over any app. Join the waitlist for early access on Google Play.">
-<meta property="og:image" content="https://shibbal66.github.io/wazirly-site/assets/og.jpg">
+<meta property="og:image" content="https://wazirly.com/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://shibbal66.github.io/wazirly-site/">
+<meta property="og:url" content="https://wazirly.com/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/icon-512.png">
 <link rel="stylesheet" href="assets/site.css">
-<link rel="stylesheet" href="assets/landing.css">
+<link rel="stylesheet" href="assets/landing.css?v=2">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -28,255 +28,413 @@
   "applicationCategory": "UtilitiesApplication",
   "description": "A button that sits over any app. Tap it for a scam check, a reply written in your tone, step-by-step help on where to tap, a summary or a translation of what's on your screen.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "url": "https://shibbal66.github.io/wazirly-site/",
-  "image": "https://shibbal66.github.io/wazirly-site/assets/og.jpg"
+  "url": "https://wazirly.com/",
+  "image": "https://wazirly.com/assets/og.jpg"
 }
 </script>
 </head>
-<body>
+<body class="landing">
 <a class="skip" href="#top">Skip to the page</a>
-<header class="topbar">
+<div class="progress" aria-hidden="true"></div>
+<header class="topbar" id="topbar">
   <div class="wrap">
-    <a class="brand" href="./"><img src="assets/icon.svg" alt="" width="36" height="36">Wazirly</a>
-    <nav aria-label="On this page">
+    <a class="brand" href="./"><img src="assets/icon.svg" alt="" width="38" height="38">Wazirly</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav id="menu" aria-label="On this page">
+      <a href="#try">Try it</a>
       <a href="#features">What it does</a>
       <a href="#how">How it works</a>
       <a href="#privacy">Privacy</a>
       <a href="#plans">Prices</a>
       <a href="#faq">Questions</a>
     </nav>
-    <a class="button light" href="#join">Join the waitlist</a>
+    <a class="btn btn-primary cta" href="#join">Join the waitlist</a>
   </div>
 </header>
 
-<main class="landing" id="top">
+<main id="top">
 
-<section class="hero-band" aria-labelledby="hero-title">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="motes" id="motes"></div>
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow">Early access on Google Play</p>
-      <h1 id="hero-title">Stuck on your phone? Tap the Wazirly button.</h1>
-      <p class="lede">Wazirly sits over any app. Tap it and it reads what's on your screen, then helps in plain words:
-        it checks if a message is a scam, writes your reply, and shows you exactly where to tap.</p>
-      <div class="cta-row">
-        <a class="button light big" href="#join">Join the waitlist</a>
-        <a class="button ghost big" href="#how">See how it works</a>
+      <p class="eyebrow rise" style="--t: 0.1s"><span class="dot"></span>Early access is open on Google Play</p>
+      <h1 id="hero-title">
+        <span class="w" style="--i: 0">Stuck</span> <span class="w" style="--i: 1">on</span> <span class="w" style="--i: 2">your</span> <span class="w" style="--i: 3">phone?</span><br>
+        <span class="w glow" style="--i: 4">Tap</span> <span class="w glow" style="--i: 5">the</span> <span class="w glow" style="--i: 6">Wazirly</span> <span class="w glow" style="--i: 7">button.</span>
+      </h1>
+      <p class="lede rise" style="--t: 0.8s">A small button that floats over every app. Tap it and Wazirly reads what's on your screen,
+        then helps in plain words: is this message a scam, what should I reply, where do I tap.</p>
+      <div class="cta-row rise" style="--t: 0.95s">
+        <a class="btn btn-primary btn-big" href="#join">Join the waitlist</a>
+        <a class="btn btn-ghost btn-big" href="#try">Try it right here</a>
       </div>
-      <p class="fine">Free to start: 10 answers a day, no card. For Android 8.0 or newer.</p>
+      <p class="fine rise" style="--t: 1.1s">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Free to start</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>No card needed</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Any Android phone from 8.0</span>
+      </p>
     </div>
-    <div class="phone">
-      <video autoplay muted loop playsinline controls preload="metadata" poster="assets/shots/replies.jpg" aria-label="A one-minute video: Wazirly suggests replies in a chat, checks a text for a scam, guides you through settings step by step, and sums up an email.">
-        <source src="assets/video/how-wazirly-works.mp4" type="video/mp4">
-      </video>
+    <div class="stage" id="stage">
+      <div class="glow"></div>
+      <div class="phone" id="phone">
+        <div class="notch"></div>
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/shots/replies.jpg" aria-label="A one-minute video: Wazirly suggests replies in a chat, checks a text for a scam, guides you through settings step by step, and sums up an email.">
+          <source src="assets/video/how-wazirly-works.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="chip chip-1" style="--delay: -1s; --t: 1.2s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg></span><span>Strong warning signs<small>Scam check</small></span></div>
+      <div class="chip chip-2" style="--delay: -2.6s; --t: 1.5s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span><span>3 replies ready<small>Suggest a reply</small></span></div>
+      <div class="chip chip-3" style="--delay: -4s; --t: 1.8s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v6"></path><path d="M12 22a8 8 0 0 0 8-8V9a2 2 0 0 0-4 0v3"></path><path d="M16 12V7a2 2 0 0 0-4 0v5"></path><path d="M12 12V5a2 2 0 0 0-4 0v9"></path><path d="M8 14v-3a2 2 0 0 0-4 0v3a8 8 0 0 0 8 8"></path></svg></span><span>Tap Display<small>Where do I tap?</small></span></div>
     </div>
+  </div>
+</section>
+
+<section class="ticker" aria-label="Apps Wazirly works over">
+  <p>Works over the apps you already use</p>
+  <div class="ticker-track" aria-hidden="true">
+    <span>WhatsApp</span><span>Messages</span><span>Gmail</span><span>Facebook</span><span>Instagram</span><span>Marketplace</span><span>Telegram</span><span>Messenger</span><span>Outlook</span><span>Chrome</span><span>eBay</span><span>Amazon</span><span>TikTok</span><span>Government sites</span><span>Shopping apps</span>
+    <span>WhatsApp</span><span>Messages</span><span>Gmail</span><span>Facebook</span><span>Instagram</span><span>Marketplace</span><span>Telegram</span><span>Messenger</span><span>Outlook</span><span>Chrome</span><span>eBay</span><span>Amazon</span><span>TikTok</span><span>Government sites</span><span>Shopping apps</span>
   </div>
 </section>
 
 <section class="section" aria-labelledby="why-title">
   <div class="wrap">
-    <h2 id="why-title">Phones keep getting harder. Scams keep getting better.</h2>
-    <p class="intro">Scam texts look real, apps move their buttons, and long letters hide the one line that matters. Most
+    <p class="kicker reveal">Why now</p>
+    <h2 id="why-title" class="reveal" style="--i: 1">Phones keep getting harder. Scams keep getting better.</h2>
+    <p class="intro reveal" style="--i: 2">Scam texts look real, apps move their buttons, and long letters hide the one line that matters. Most
       of us end up guessing, or asking someone, again.</p>
     <div class="stats">
-      <div class="stat">
-        <p class="big">$15.9 billion</p>
-        <p>lost to fraud reported by Americans in 2025, a record, and text messages were the most common way in.</p>
-        <p class="source">Source: <a href="https://www.ftc.gov/system/files/ftc_gov/pdf/ftc-testimony-jec-hearing-on-the-rising-scam-economy.pdf">US Federal Trade Commission</a></p>
+      <div class="card stat reveal" style="--i: 0">
+        <p class="num"><span data-count="15.9" data-decimals="1" data-prefix="$" data-suffix=" billion">$15.9 billion</span></p>
+        <p>lost to fraud reported by Americans in 2025, a record. Text messages were the most common way in.</p>
+        <p class="src">Source: <a href="https://www.ftc.gov/system/files/ftc_gov/pdf/ftc-testimony-jec-hearing-on-the-rising-scam-economy.pdf">US Federal Trade Commission</a></p>
       </div>
-      <div class="stat">
-        <p class="big">£576 million</p>
-        <p>lost in the UK in 2025 to scams that trick people into sending money themselves.</p>
-        <p class="source">Source: <a href="https://www.ukfinance.org.uk/news-and-insight/press-release/fraud-report-2026-press-release">UK Finance, Annual Fraud Report 2026</a></p>
+      <div class="card stat reveal" style="--i: 1">
+        <p class="num"><span data-count="576" data-prefix="£" data-suffix=" million">£576 million</span></p>
+        <p>lost in the UK in 2025 to scams that trick people into sending the money themselves.</p>
+        <p class="src">Source: <a href="https://www.ukfinance.org.uk/news-and-insight/press-release/fraud-report-2026-press-release">UK Finance, Annual Fraud Report 2026</a></p>
       </div>
-      <div class="stat">
-        <p class="big">1 in 3</p>
+      <div class="card stat reveal" style="--i: 2">
+        <p class="num"><span data-count="3" data-prefix="1 in ">1 in 3</span></p>
         <p>UK adults helped someone else get something done online last year, most often a parent.</p>
-        <p class="source">Source: <a href="https://www.gov.uk/government/publications/how-people-are-helped-online-informal-and-proxy-digital-support/informal-and-proxy-support-for-digital-inclusion-final-report">UK Department for Science, Innovation and Technology, 2026</a></p>
+        <p class="src">Source: <a href="https://www.gov.uk/government/publications/how-people-are-helped-online-informal-and-proxy-digital-support/informal-and-proxy-support-for-digital-inclusion-final-report">UK Department for Science, Innovation and Technology, 2026</a></p>
       </div>
     </div>
-    <p class="also">In Canada, people reported a record C$704 million lost to fraud in 2025
+    <p class="also reveal">In Canada, people reported a record C$704 million lost to fraud in 2025
       (<a href="https://antifraudcentre-centreantifraude.ca/features-vedette/2026/02/top-fraud-2025-fraudes-plus-courantes-eng.htm">Canadian Anti-Fraud Centre</a>), and in Australia A$2.18 billion
       (<a href="https://www.nasc.gov.au/system/files/targeting-scams-report-2025.pdf">National Anti-Scam Centre</a>).</p>
   </div>
 </section>
 
-<section class="section alt" id="features" aria-labelledby="features-title">
+<section class="section section-alt" id="try" aria-labelledby="try-title">
+  <div class="wrap demo">
+    <div class="demo-copy">
+      <p class="kicker reveal">Try it right here</p>
+      <h2 id="try-title" class="reveal" style="--i: 1">Tap the button. See what happens.</h2>
+      <p class="intro reveal" style="--i: 2">This is how Wazirly works on a real phone. Pick a situation, then tap the Wazirly button on the
+        screen.</p>
+      <ul class="demo-tabs reveal" style="--i: 3" aria-label="Situations">
+        <li><button type="button" data-scenario="scam" aria-pressed="true">A suspicious text</button></li>
+        <li><button type="button" data-scenario="reply" aria-pressed="false">A chat to answer</button></li>
+        <li><button type="button" data-scenario="guide" aria-pressed="false">Turn on dark mode</button></li>
+      </ul>
+      <ol class="demo-steps reveal" style="--i: 4" id="demo-steps">
+        <li><span class="n">1</span><span>Tap the Wazirly button on the screen</span></li>
+        <li><span class="n">2</span><span>Wazirly reads what's on the screen</span></li>
+        <li><span class="n">3</span><span>Pick what you need</span></li>
+        <li><span class="n">4</span><span>Get the answer, in plain words</span></li>
+      </ol>
+    </div>
+    <div class="mock-wrap reveal" style="--i: 2">
+      <div class="glow"></div>
+      <div class="mock" id="mock">
+        <div class="notch"></div>
+        <div class="mock-screen">
+
+          <div class="scr show" id="scr-sms">
+            <div class="sb"><span>12:00</span><i></i></div>
+            <div class="tb"><span class="back"></span><span class="avatar"></span><span>+44 7700 900461<small>Not a contact</small></span></div>
+            <div class="msgs">
+              <span class="day">Today</span>
+              <div class="msg">Hi, I accidentally sent £1,200 to your account this morning. Please send it back today, it's for my children's school fees. Thank you 🙏<time>3:12 pm</time></div>
+            </div>
+            <div class="inbar"><span>Text message</span><i></i></div>
+          </div>
+
+          <div class="scr" id="scr-chat">
+            <div class="sb"><span>12:00</span><i></i></div>
+            <div class="tb"><span class="back"></span><span class="avatar"></span><span>Ahmed<small>online</small></span></div>
+            <div class="msgs">
+              <span class="day">Today</span>
+              <div class="msg">Hey, are we still on for tomorrow?<time>9:41 pm</time></div>
+              <div class="msg out">Yes, 8 if that works<time>9:43 pm</time></div>
+              <div class="msg">Mum's asking if you'll come for dinner at ours?<time>9:50 pm</time></div>
+            </div>
+            <div class="inbar"><span>Message</span><i></i></div>
+          </div>
+
+          <div class="scr" id="scr-settings">
+            <div class="sb"><span>12:00</span><i></i></div>
+            <div class="tb"><span class="back"></span><span>Settings</span></div>
+            <div class="list">
+              <div class="row"><span><b>Notifications</b><small>Sounds, badges, quiet hours</small></span></div>
+              <button class="row" type="button" id="row-display" disabled><span><b>Display</b><small>Brightness, text size</small></span></button>
+              <div class="row"><span><b>Sound</b><small>Ringtone, vibration</small></span></div>
+              <div class="row"><span><b>Language</b><small>English</small></span></div>
+              <div class="row"><span><b>Storage</b><small>1.2 GB used</small></span></div>
+              <div class="row"><span><b>Privacy</b><small>Blocked contacts, read receipts</small></span></div>
+              <div class="row"><span><b>Help</b><small>Questions, contact us</small></span></div>
+            </div>
+          </div>
+
+          <div class="scr" id="scr-display">
+            <div class="sb"><span>12:00</span><i></i></div>
+            <div class="tb"><span class="back"></span><span>Display</span></div>
+            <div class="list">
+              <div class="row"><span><b>Brightness</b><small>Adaptive</small></span></div>
+              <button class="row" type="button" id="row-dark" disabled><span><b>Dark mode</b><small id="dark-state">Off</small></span><span class="sw"></span></button>
+              <div class="row"><span><b>Screen timeout</b><small>30 seconds</small></span></div>
+              <div class="row"><span><b>Text size</b><small>Default</small></span></div>
+              <div class="row"><span><b>Wallpaper</b><small>Default</small></span></div>
+            </div>
+          </div>
+
+          <div class="tag" id="tag">Tap me for help on any screen</div>
+          <button class="bubble-btn" type="button" id="bubble" aria-label="Tap the Wazirly button"><span class="pulse"></span><span class="pulse"></span><img src="assets/icon-512.png" alt="" width="40" height="40"></button>
+          <div class="ripple" id="ripple"></div>
+
+          <div class="panel" id="panel" aria-live="polite">
+            <div class="panel-head"><img src="assets/icon-512.png" alt="" width="28" height="28"><b id="panel-title">Wazirly</b><button class="x" type="button" id="panel-close" aria-label="Close">✕</button></div>
+
+            <div class="panel-view" id="view-menu">
+              <p class="scan" id="scan"><span class="dots"><i></i><i></i><i></i></span><span id="scan-text">Reading the screen…</span></p>
+              <div class="actions" id="actions">
+                <span class="lead" id="act-lead">Suggest a reply</span>
+                <span id="act-ask">Ask a question</span><span id="act-summary">Summary</span><span id="act-translate">Translate</span><span id="act-scam">Scam check</span><span id="act-tap">Where do I tap?</span><span id="act-image">Describe image</span>
+              </div>
+            </div>
+
+            <div class="panel-view" id="view-scam">
+              <div class="answer" id="ans-scam">
+                <p class="verdict" style="--i: 0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m15 9-6 6"></path><path d="m9 9 6 6"></path></svg>Strong warning signs</p>
+                <p style="--i: 1">Classic "sent by mistake, please send it back" trick: the money that came in is usually fake, or taken back later.</p>
+                <p style="--i: 2">Pressure and a sad story (children's school fees) are there to rush you. It comes from an unknown number.</p>
+                <p style="--i: 3"><strong>Don't send any money.</strong> Check your balance in your bank's own app, not through this message, and report the text.</p>
+                <p class="muted" style="--i: 4">This is a guide, not a guarantee.</p>
+              </div>
+            </div>
+
+            <div class="panel-view" id="view-reply">
+              <div class="answer" id="ans-reply">
+                <p class="muted" style="--i: 0">Chat · Ahmed. He's asking if you'll come for dinner with your mum; say yes or no, warmly.</p>
+                <button class="reply" type="button" style="--i: 1"><b>Yes, I'll come</b>Yes, I'll be there! Tell Mum I'm looking forward to it 😊</button>
+                <button class="reply" type="button" style="--i: 2"><b>Yes, with the time</b>Count me in, I'll be there by 8. Say hi to Mum for me.</button>
+                <button class="reply" type="button" style="--i: 3"><b>Can't make it</b>Sorry, tomorrow's tricky for me. Tell Mum I'm sorry, next time for sure!</button>
+                <p class="muted" style="--i: 4">Tap one to copy it, then paste it in the chat.</p>
+              </div>
+            </div>
+
+            <div class="panel-view" id="view-guide">
+              <p class="muted">What do you want to do?</p>
+              <p class="field"><span id="typed"></span><span class="caret"></span></p>
+              <p><button class="go" type="button" id="find" disabled>Find it</button></p>
+            </div>
+
+            <div class="panel-view" id="view-step">
+              <div class="answer" id="ans-step">
+                <p class="step-tag" style="--i: 0" id="step-tag">Step 1</p>
+                <p style="--i: 1" id="step-text">Tap Display. Dark mode is on the page it opens.</p>
+                <p class="muted" style="--i: 2" id="step-note">Once you've done that, Wazirly shows the next step.</p>
+              </div>
+            </div>
+
+            <p class="panel-foot" id="panel-foot">9 answers left today</p>
+          </div>
+
+          <div class="toast" id="toast">Copied · paste it in the chat</div>
+        </div>
+      </div>
+      <p class="demo-hint" id="hint">Tap the Wazirly button on the phone</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features" aria-labelledby="features-title">
   <div class="wrap">
-    <h2 id="features-title">One button. The help you need, right where you're stuck.</h2>
-    <p class="intro">No copying, no screenshots, no switching apps. Wazirly works over your chats, texts, emails,
-      shopping and the other apps you use every day.</p>
+    <div class="center">
+      <p class="kicker reveal">What it does</p>
+      <h2 id="features-title" class="reveal" style="--i: 1">One button. The right help, right where you're stuck.</h2>
+      <p class="intro reveal" style="--i: 2">No copying, no screenshots, no switching apps. Wazirly works over your chats, texts, emails,
+        shopping and everything else on your phone.</p>
+    </div>
 
     <div class="feature">
-      <div class="shot"><img src="assets/shots/scam.jpg" alt="Wazirly's Scam check over a text that says money was sent by mistake: Strong warning signs, the reasons, and what to do." width="540" height="1080" loading="lazy"></div>
+      <div class="frame-wrap"><div class="glow"></div><div class="frame"><img src="assets/screens/sms-scam.jpg" alt="Wazirly's Scam check over a text that says money was sent by mistake: Strong warning signs, the reasons, and what to do." width="720" height="1440" loading="lazy"></div></div>
       <div>
-        <p class="tag">Scam check</p>
-        <h3>Not sure about a message? Ask before you tap.</h3>
-        <p>Wazirly reads the text, email or post on your screen and tells you how risky it looks, the warning signs it
-          found, and what to do next. It works in WhatsApp, Messages, email and social apps, where spam filters stop.</p>
+        <p class="kicker reveal">Scam check</p>
+        <h3 class="reveal" style="--i: 1">Not sure about a message? Ask before you tap.</h3>
+        <p class="reveal" style="--i: 2">Wazirly reads the text, email or post on your screen and tells you how risky it looks, the warning
+          signs it found, and what to do next. It works in WhatsApp, Messages, email and social apps, where spam
+          filters stop.</p>
         <ul class="ticks">
-          <li>Plain words: strong warning signs, some, or none it can see</li>
-          <li>The exact phrases that gave it away, like "sent by mistake" or "your account is locked"</li>
-          <li>One clear next step: don't pay, check with your bank, block, report</li>
+          <li class="reveal" style="--i: 3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>Plain words: strong warning signs, some, or none it can see</span></li>
+          <li class="reveal" style="--i: 4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>The exact phrases that gave it away, like "sent by mistake" or "your account is locked"</span></li>
+          <li class="reveal" style="--i: 5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>One clear next step: don't pay, check with your bank, block, report</span></li>
         </ul>
       </div>
     </div>
 
     <div class="feature flip">
-      <div class="shot"><img src="assets/shots/replies.jpg" alt="Suggest a reply over a family chat: three ready replies, with Shorter and More formal buttons." width="540" height="1080" loading="lazy"></div>
+      <div class="frame-wrap"><div class="glow"></div><div class="frame"><img src="assets/screens/chat-replies.jpg" alt="Suggest a reply over a family chat: three ready replies, with Shorter and More formal buttons." width="720" height="1440" loading="lazy"></div></div>
       <div>
-        <p class="tag">Suggest a reply</p>
-        <h3>Three replies in your own voice. Pick one, send.</h3>
-        <p>Wazirly reads the chat, works out what's being asked, and writes three different replies: yes, no, or
+        <p class="kicker reveal">Suggest a reply</p>
+        <h3 class="reveal" style="--i: 1">Three replies in your own voice. Pick one, send.</h3>
+        <p class="reveal" style="--i: 2">Wazirly reads the chat, works out what's being asked, and writes three different replies: yes, no, or
           something in between. Copy the one you like and paste it in.</p>
         <ul class="ticks">
-          <li>Make it shorter, warmer or more formal with one tap</li>
-          <li>Tell it your point in a few words, and it writes the message</li>
-          <li>Follows the chat you're in: family, friends, work or a seller</li>
+          <li class="reveal" style="--i: 3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>Make it shorter, warmer or more formal with one tap</span></li>
+          <li class="reveal" style="--i: 4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>Tell it your point in a few words, and it writes the message</span></li>
+          <li class="reveal" style="--i: 5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>Follows the chat you're in: family, friends, work or a seller</span></li>
         </ul>
       </div>
     </div>
 
     <div class="feature">
-      <div class="shot"><img src="assets/shots/guide.jpg" alt="Where do I tap: a ring around Display in a settings list, and the step that says to tap it." width="540" height="1080" loading="lazy"></div>
+      <div class="frame-wrap"><div class="glow"></div><div class="frame"><img src="assets/screens/settings-step1.jpg" alt="Where do I tap: a ring around Display in a settings list, and the step that says to tap it." width="720" height="1440" loading="lazy"></div></div>
       <div>
-        <p class="tag">Where do I tap?</p>
-        <h3>Say what you want to do. Wazirly shows the way, one tap at a time.</h3>
-        <p>"Turn on dark mode", "cancel my subscription", "find my order". Wazirly puts a ring around the next
+        <p class="kicker reveal">Where do I tap?</p>
+        <h3 class="reveal" style="--i: 1">Say what you want to do. Wazirly shows the way, one tap at a time.</h3>
+        <p class="reveal" style="--i: 2">"Turn on dark mode", "cancel my subscription", "find my order". Wazirly puts a ring around the next
           thing to tap, then follows you to the next screen until it's done.</p>
         <ul class="ticks">
-          <li>Type it or just say it</li>
-          <li>You stay in control: Wazirly shows the way and never taps for you</li>
-          <li>Lost? It notices and helps you back on track</li>
+          <li class="reveal" style="--i: 3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>Type it or just say it</span></li>
+          <li class="reveal" style="--i: 4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>You stay in control: Wazirly shows the way and never taps for you</span></li>
+          <li class="reveal" style="--i: 5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>Lost? It notices and helps you back on track</span></li>
         </ul>
       </div>
     </div>
 
     <div class="more">
-      <div class="card">
+      <div class="card reveal" style="--i: 0">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg></span>
         <h3>Summary</h3>
-        <p>A long email, a busy group chat, a confusing bill: get the key points, the deadline and the amount first.</p>
+        <p>A long email, a busy group chat, a confusing bill: the key points first, with the deadline and the amount.</p>
       </div>
-      <div class="card">
+      <div class="card reveal" style="--i: 1">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg></span>
         <h3>Translate</h3>
-        <p>Read what's on your screen in English, <bdi lang="ur">اردو</bdi> or Roman Urdu, without leaving the app you're in.</p>
+        <p>Read what's on your screen in your language, without leaving the app you're in. Then reply in good English.</p>
       </div>
-      <div class="card">
+      <div class="card reveal" style="--i: 2">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg></span>
         <h3>Ask anything</h3>
-        <p>"What does this mean?" "Is this the right form?" Ask about what's on the screen, or have it describe the
-          pictures.</p>
+        <p>"What does this mean?" "Is this the right form?" Ask about what's on the screen, or have it describe the pictures.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="how" aria-labelledby="how-title">
-  <div class="wrap">
-    <h2 id="how-title" class="center">How it works</h2>
-    <p class="intro center">Set it up once. After that, help is one tap away in every app.</p>
-    <ol class="steps">
-      <li>
-        <h3>Turn on Wazirly</h3>
-        <p>Install it from Google Play and tap Start. Android asks you to let Wazirly show its button over your apps
-          and see your screen when you ask for help.</p>
-      </li>
-      <li>
-        <h3>Tap the button on any screen</h3>
-        <p>It floats at the edge of your screen. Move it wherever you like, or hold it to speak.</p>
-      </li>
-      <li>
-        <h3>Pick what you need</h3>
-        <p>Scam check, a reply, where to tap, a summary. The answer comes in seconds, in plain words.</p>
-      </li>
+<section class="section section-alt" id="how" aria-labelledby="how-title">
+  <div class="wrap center">
+    <p class="kicker reveal">How it works</p>
+    <h2 id="how-title" class="reveal" style="--i: 1">Set it up once. Help is one tap away in every app.</h2>
+    <p class="intro reveal" style="--i: 2">Three steps, and the button stays with you.</p>
+    <ol class="steps" id="steps">
+      <li class="card reveal" style="--i: 0"><span class="n">1</span><h3>Turn on Wazirly</h3><p>Install it from Google Play and tap Start. Android asks you to let Wazirly show its button over your apps and see your screen when you ask for help.</p></li>
+      <li class="card reveal" style="--i: 1"><span class="n">2</span><h3>Tap the button on any screen</h3><p>It floats at the edge of your screen. Move it wherever you like, or hold it to speak.</p></li>
+      <li class="card reveal" style="--i: 2"><span class="n">3</span><h3>Pick what you need</h3><p>Scam check, a reply, where to tap, a summary. The answer comes in seconds, in plain words.</p></li>
     </ol>
   </div>
 </section>
 
-<section class="section alt" aria-labelledby="family-title">
+<section class="section" aria-labelledby="family-title">
   <div class="wrap family">
     <div>
-      <h2 id="family-title">Set it up once for someone you love.</h2>
-      <p class="quote">"Is this text from the bank real?" "How do I send a photo?" "Where's the button gone?"</p>
-      <p>If you're the person everyone calls for phone help, install Wazirly on their phone and turn it on together.
+      <p class="kicker reveal">For the family tech support</p>
+      <h2 id="family-title" class="reveal" style="--i: 1">Set it up once for someone you love.</h2>
+      <p class="quote reveal" style="--i: 2">"Is this text from the bank real?" "How do I send a photo?" "Where's the button gone?"</p>
+      <p class="reveal" style="--i: 3">If you're the one everyone calls for phone help, put Wazirly on their phone and turn it on together.
         They get a calm second opinion on every suspicious message and patient, step-by-step help, any time of day,
         without waiting for you to pick up.</p>
-      <a class="button big" href="#join">Join the waitlist for them</a>
+      <p class="reveal" style="--i: 4"><a class="btn btn-jamun btn-big" href="#join">Join the waitlist for them</a></p>
     </div>
-    <div class="shot"><img src="assets/shots/button.jpg" alt="The Wazirly button at the edge of a chat, with the tag: Tap me for help on any screen." width="540" height="1080" loading="lazy"></div>
+    <div class="orbit reveal" style="--i: 2">
+      <span class="ring r1"></span><span class="ring r2"></span>
+      <div class="badge"><img src="assets/icon-512.png" alt="" width="136" height="136"></div>
+      <span class="bubble b1">Is this text real?</span>
+      <span class="bubble b2">How do I send a photo?</span>
+      <span class="bubble b3">Where's the button gone?</span>
+    </div>
   </div>
 </section>
 
-<section class="section" id="privacy" aria-labelledby="privacy-title">
+<section class="section section-alt" id="privacy" aria-labelledby="privacy-title">
   <div class="wrap">
-    <h2 id="privacy-title">Private by design</h2>
-    <p class="intro">Your screen is personal. Wazirly is built to read as little as it can, only when you ask.</p>
+    <p class="kicker reveal">Private by design</p>
+    <h2 id="privacy-title" class="reveal" style="--i: 1">Your screen is yours. Wazirly reads as little as it can, only when you ask.</h2>
     <div class="promises">
-      <div class="card">
-        <h3>Only when you tap</h3>
-        <p>Wazirly reads your screen only when you tap its button, after Android's own permission prompt. It doesn't
-          watch in the background.</p>
-      </div>
-      <div class="card">
-        <h3>Pictures only with your OK</h3>
-        <p>Most answers use just the words on your screen. When a picture would help, Wazirly asks first.</p>
-      </div>
-      <div class="card">
-        <h3>Never sold, no ads, no training</h3>
-        <p>Your requests aren't sold or used for ads, and the AI provider isn't allowed to train its models on them.</p>
-      </div>
-      <div class="card">
-        <h3>Delete it any time</h3>
-        <p>One tap in the app deletes your data. You don't need an account to use Wazirly.</p>
-      </div>
+      <div class="card reveal" style="--i: 0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11V7a3 3 0 0 1 6 0v4"></path><rect x="5" y="11" width="14" height="10" rx="2"></rect></svg></span><div><h3>Only when you tap</h3><p>Wazirly reads your screen only when you tap its button, after Android's own permission prompt. It never watches in the background.</p></div></div>
+      <div class="card reveal" style="--i: 1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-5-5L5 21"></path></svg></span><div><h3>Pictures only with your OK</h3><p>Most answers use just the words on your screen. When a picture would help, Wazirly asks first.</p></div></div>
+      <div class="card reveal" style="--i: 2"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m4.9 4.9 14.2 14.2"></path></svg></span><div><h3>Never sold, no ads, no training</h3><p>Your requests aren't sold or used for ads, and the AI provider isn't allowed to train its models on them.</p></div></div>
+      <div class="card reveal" style="--i: 3"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path><path d="M10 11v6"></path><path d="M14 11v6"></path></svg></span><div><h3>Delete it any time</h3><p>One tap in the app deletes your data. You don't need an account to use Wazirly.</p></div></div>
     </div>
-    <p class="also">Android hides Wazirly in your phone's own Settings and on some banking and password screens, to keep you
+    <p class="also reveal">Android hides Wazirly in your phone's own Settings and on some banking and password screens, to keep you
       safe. The full details are in the <a href="privacy/">privacy policy</a>.</p>
   </div>
 </section>
 
-<section class="section alt" id="plans" aria-labelledby="plans-title">
+<section class="section" id="plans" aria-labelledby="plans-title">
   <div class="wrap center">
-    <h2 id="plans-title">Start free. Upgrade when you need more.</h2>
-    <p class="intro">Every feature is in the free plan. Premium is for people who use Wazirly all day.</p>
+    <p class="kicker reveal">Prices</p>
+    <h2 id="plans-title" class="reveal" style="--i: 1">Start free. Upgrade when you need more.</h2>
+    <p class="intro reveal" style="--i: 2">Every feature is in the free plan. Premium is for people who use Wazirly all day.</p>
     <div class="plans">
-      <div class="plan">
+      <div class="card plan reveal" style="--i: 0">
         <h3>Free</h3>
         <p class="price">Free, no card needed</p>
         <ul class="ticks">
-          <li>10 answers a day</li>
-          <li>Up to 3 of them can look at pictures on your screen</li>
-          <li>Scam check, replies, where to tap, summary, translate and more</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>10 answers a day</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>Up to 3 of them can look at pictures on your screen</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>Scam check, replies, where to tap, summary, translate and more</span></li>
         </ul>
+        <a class="btn btn-ghost" href="#join">Join the waitlist</a>
       </div>
-      <div class="plan premium">
+      <div class="card plan plan-premium reveal" style="--i: 1">
+        <span class="badge-top">Free for testers</span>
         <h3>Premium</h3>
         <p class="price">Monthly or yearly, through Google Play</p>
         <ul class="ticks">
-          <li>50 answers a day</li>
-          <li>Up to 10 of them can look at pictures on your screen</li>
-          <li>Answers can search the web for current facts and an app's real menus</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>50 answers a day</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>Up to 10 of them can look at pictures on your screen</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>Answers can search the web for current facts and an app's real menus</span></li>
         </ul>
+        <a class="btn btn-primary" href="#join">Get early access</a>
       </div>
     </div>
-    <p class="testing-note"><strong>Early-access bonus:</strong> while Wazirly is in testing, testers get Premium free.</p>
+    <p class="testing-note reveal"><strong>Early-access bonus:</strong> while Wazirly is in testing, testers get Premium free.</p>
   </div>
 </section>
 
 <section class="section join" id="join" aria-labelledby="join-title">
   <div class="wrap join-grid">
     <div>
-      <h2 id="join-title">Join the waitlist</h2>
-      <p class="intro">Wazirly is in early access on Google Play. Leave your email and we'll send your invite, or tell
+      <p class="kicker reveal">Join the waitlist</p>
+      <h2 id="join-title" class="reveal" style="--i: 1">Be first when Wazirly reaches your phone.</h2>
+      <p class="intro reveal" style="--i: 2">Wazirly is in early access on Google Play. Leave your email and we'll send your invite, or tell
         you the moment it's ready for your phone.</p>
       <ul class="points">
-        <li>Early access to the Android app, with Premium free while it's in testing</li>
-        <li>On iPhone? Tell us below. iPhone doesn't let apps help over other apps yet, and you'll be first to hear
-          when Wazirly works there</li>
-        <li>One or two emails, no spam, unsubscribe any time</li>
+        <li class="reveal" style="--i: 3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>Early access to the Android app, with Premium free while it's in testing</span></li>
+        <li class="reveal" style="--i: 4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>On iPhone? Tell us. iPhone doesn't let apps help over other apps yet, and you'll be first to hear when Wazirly works there</span></li>
+        <li class="reveal" style="--i: 5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m8 12 3 3 5-6"></path></svg><span>One or two emails, no spam, unsubscribe any time</span></li>
       </ul>
-      <p>Already invited? <a href="https://play.google.com/store/apps/details?id=com.sharkstack.wazirly">Get Wazirly on Google Play</a></p>
+      <p class="reveal" style="--i: 6">Already invited? <a href="https://play.google.com/store/apps/details?id=com.sharkstack.wazirly">Get Wazirly on Google Play</a></p>
     </div>
-    <form class="join-form" method="post" action="https://us-central1-wazirly-prod.cloudfunctions.net/joinWaitlist">
-      <div class="field">
+    <form class="join-form reveal" style="--i: 2" method="post" action="https://us-central1-wazirly-prod.cloudfunctions.net/joinWaitlist">
+      <div class="field-row">
         <label for="email">Your email</label>
         <input id="email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required placeholder="name@example.com">
       </div>
@@ -288,7 +446,7 @@
           <div class="choice"><input id="phone-other" name="phone" type="radio" value="other"><label for="phone-other">Other</label></div>
         </div>
       </fieldset>
-      <div class="field">
+      <div class="field-row">
         <label for="country">Where you live</label>
         <select id="country" name="country" required>
           <option value="US">United States</option>
@@ -307,71 +465,38 @@
         <input id="consent" name="consent" type="checkbox" value="yes" required>
         <label for="consent">Email me my invite and news of Wazirly's launch. I can unsubscribe any time.</label>
       </div>
-      <button class="button" type="submit">Join the waitlist</button>
+      <button class="btn btn-primary btn-big" type="submit">Join the waitlist</button>
       <p class="note">We use your email only for Wazirly's early access and launch. See the
         <a href="privacy/#waitlist">privacy policy</a>.</p>
     </form>
   </div>
 </section>
 
-<section class="section" id="faq" aria-labelledby="faq-title">
+<section class="section section-alt" id="faq" aria-labelledby="faq-title">
   <div class="wrap">
-    <h2 id="faq-title" class="center">Questions</h2>
-    <div class="faq">
-      <details>
-        <summary>What exactly is Wazirly?</summary>
-        <p>An Android app that puts a small button over every app on your phone. When you're stuck, tap it: Wazirly
-          reads what's on your screen and helps with what's in front of you, from a suspicious text to a reply you
-          don't know how to write.</p>
-      </details>
-      <details>
-        <summary>Is it free?</summary>
-        <p>Yes. The free plan gives you 10 answers a day with every feature, and no card is needed. Premium gives you 50 a
-          day and answers that can search the web. While Wazirly is in testing, testers get Premium free.</p>
-      </details>
-      <details>
-        <summary>Which phones does it work on?</summary>
-        <p>Android phones with Android 8.0 or newer, which is nearly every Android phone in use today, not just the
-          latest models. It isn't available on iPhone yet, because iPhone doesn't let apps show a button over other
-          apps. Join the waitlist and choose iPhone to hear first if that changes.</p>
-      </details>
-      <details>
-        <summary>Does it work in every app?</summary>
-        <p>In almost every app: chats, texts, email, social media, shopping, government and health sites. For your
-          safety, Android hides it in your phone's own Settings app and on some banking and password screens.</p>
-      </details>
-      <details>
-        <summary>What does Wazirly see, and who else does?</summary>
-        <p>Only the screen you're on, and only when you tap its button. To write the answer, the words on that screen
-          go to Wazirly's server and an AI model. They aren't sold, used for ads, or used to train AI. Pictures are
-          sent only if you agree. The <a href="privacy/">privacy policy</a> has every detail.</p>
-      </details>
-      <details>
-        <summary>Is the scam check always right?</summary>
-        <p>No checker is. Wazirly tells you the warning signs it can see and what to do, as a second opinion. If
-          you're unsure, don't pay or share codes, and check with your bank or the company using a number you already
-          trust.</p>
-      </details>
-      <details>
-        <summary>Which languages does it speak?</summary>
-        <p>Wazirly's screens and answers come in English, Urdu (<bdi lang="ur">اردو</bdi>) and Roman Urdu. It can read and translate what's on
-          your screen in many more.</p>
-      </details>
-      <details>
-        <summary>How do I get it now?</summary>
-        <p>Join the waitlist above. We'll email your invite to the Google Play early-access test. Once you've accepted it,
-          you install Wazirly from Google Play like any other app.</p>
-      </details>
+    <div class="center">
+      <p class="kicker reveal">Questions</p>
+      <h2 id="faq-title" class="reveal" style="--i: 1">Good to know before you join</h2>
+    </div>
+    <div class="faq reveal" style="--i: 2">
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a1">What exactly is Wazirly?<span class="plus"></span></button></h3><div class="faq-a" id="faq-a1"><div><p>An Android app that puts a small button over every app on your phone. When you're stuck, tap it: Wazirly reads what's on your screen and helps with what's in front of you, from a suspicious text to a reply you don't know how to write.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a2">Is it free?<span class="plus"></span></button></h3><div class="faq-a" id="faq-a2"><div><p>Yes. The free plan gives you 10 answers a day with every feature, and no card is needed. Premium gives you 50 a day and answers that can search the web. While Wazirly is in testing, testers get Premium free.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a3">Which phones does it work on?<span class="plus"></span></button></h3><div class="faq-a" id="faq-a3"><div><p>Android phones with Android 8.0 or newer, which is nearly every Android phone in use today, not just the latest models. It isn't on iPhone yet, because iPhone doesn't let apps show a button over other apps. Join the waitlist and choose iPhone to hear first if that changes.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a4">Does it work in every app?<span class="plus"></span></button></h3><div class="faq-a" id="faq-a4"><div><p>In almost every app: chats, texts, email, social media, shopping, government and health sites. For your safety, Android hides it in your phone's own Settings app and on some banking and password screens.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a5">What does Wazirly see, and who else does?<span class="plus"></span></button></h3><div class="faq-a" id="faq-a5"><div><p>Only the screen you're on, and only when you tap its button. To write the answer, the words on that screen go to Wazirly's server and an AI model. They aren't sold, used for ads, or used to train AI. Pictures are sent only if you agree. The <a href="privacy/">privacy policy</a> has every detail.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a6">Is the scam check always right?<span class="plus"></span></button></h3><div class="faq-a" id="faq-a6"><div><p>No checker is. Wazirly tells you the warning signs it can see and what to do, as a second opinion. If you're unsure, don't pay or share codes, and check with your bank or the company using a number you already trust.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a7">Which languages does it speak?<span class="plus"></span></button></h3><div class="faq-a" id="faq-a7"><div><p>Wazirly's screens and answers come in English, Urdu and Roman Urdu. It can read and translate what's on your screen in many more.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a8">How do I get it now?<span class="plus"></span></button></h3><div class="faq-a" id="faq-a8"><div><p>Join the waitlist above. We'll email your invite to the Google Play early-access test. Once you've accepted it, you install Wazirly from Google Play like any other app.</p></div></div></div>
     </div>
   </div>
 </section>
 
-<section class="section alt closing" aria-labelledby="closing-title">
+<section class="section closing" aria-labelledby="closing-title">
   <div class="wrap">
-    <img src="assets/icon-512.png" alt="" width="84" height="84">
-    <h2 id="closing-title">Next time you're stuck, tap the Wazirly button.</h2>
-    <p class="intro center">Help with anything on your screen, in any app.</p>
-    <a class="button big" href="#join">Join the waitlist</a>
+    <div class="halo reveal"><img src="assets/icon-512.png" alt="" width="120" height="120"></div>
+    <h2 id="closing-title" class="reveal" style="--i: 1">Next time you're stuck, tap the Wazirly button.</h2>
+    <p class="intro center reveal" style="--i: 2">Help with anything on your screen, in any app.</p>
+    <p class="reveal" style="--i: 3"><a class="btn btn-primary btn-big" href="#join">Join the waitlist</a></p>
   </div>
 </section>
 
@@ -379,7 +504,7 @@
 
 <footer class="footer">
   <div class="wrap">
-    <a class="brand" href="./"><img src="assets/icon.svg" alt="" width="36" height="36">Wazirly</a>
+    <a class="brand" href="./"><img src="assets/icon.svg" alt="" width="34" height="34">Wazirly</a>
     <nav aria-label="About Wazirly">
       <a href="privacy/">Privacy Policy</a>
       <a href="delete-account/">Delete your Wazirly account</a>
@@ -389,5 +514,284 @@
     <p>© 2026 Sharkstack Developments</p>
   </div>
 </footer>
+
+<script>
+(function () {
+  "use strict";
+  var doc = document, root = doc.documentElement;
+  root.className = root.className.replace("no-js", "js");
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var $ = function (id) { return doc.getElementById(id); };
+
+  // Motes drifting up the hero.
+  var motes = $("motes");
+  if (motes && !reduce) {
+    for (var i = 0; i < 28; i++) {
+      var m = doc.createElement("i");
+      m.style.left = (Math.random() * 100) + "%";
+      m.style.setProperty("--s", (3 + Math.random() * 6).toFixed(1) + "px");
+      m.style.setProperty("--d", (12 + Math.random() * 18).toFixed(1) + "s");
+      m.style.setProperty("--delay", (-Math.random() * 30).toFixed(1) + "s");
+      m.style.setProperty("--x", ((Math.random() - 0.5) * 120).toFixed(0) + "px");
+      m.style.setProperty("--o", (0.2 + Math.random() * 0.5).toFixed(2));
+      motes.appendChild(m);
+    }
+  }
+
+  // The top bar and the progress line.
+  var topbar = $("topbar"), progress = doc.querySelector(".progress");
+  function onScroll() {
+    var y = window.scrollY || root.scrollTop;
+    topbar.classList.toggle("scrolled", y > 24);
+    var max = root.scrollHeight - window.innerHeight;
+    progress.style.setProperty("--progress", max > 0 ? Math.min(1, y / max) : 0);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  var menuBtn = doc.querySelector(".menu-btn");
+  menuBtn.addEventListener("click", function () {
+    var open = topbar.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  doc.querySelectorAll("#menu a").forEach(function (a) {
+    a.addEventListener("click", function () { topbar.classList.remove("open"); menuBtn.setAttribute("aria-expanded", "false"); });
+  });
+
+  // Reveals, the feature frames and the steps line, as they scroll into view.
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.18, rootMargin: "0px 0px -8% 0px" });
+    doc.querySelectorAll(".reveal, .frame, .steps").forEach(function (el) { io.observe(el); });
+
+    // The numbers count up.
+    var counted = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        counted.unobserve(e.target);
+        var el = e.target, end = parseFloat(el.getAttribute("data-count")), dec = parseInt(el.getAttribute("data-decimals") || "0", 10);
+        var prefix = el.getAttribute("data-prefix") || "", suffix = el.getAttribute("data-suffix") || "";
+        if (reduce) return;
+        var start = null, dur = 1600;
+        function frame(t) {
+          if (start === null) start = t;
+          var p = Math.min(1, (t - start) / dur), eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = prefix + (end * eased).toFixed(dec) + suffix;
+          if (p < 1) requestAnimationFrame(frame);
+        }
+        requestAnimationFrame(frame);
+      });
+    }, { threshold: 0.6 });
+    doc.querySelectorAll("[data-count]").forEach(function (el) { counted.observe(el); });
+  } else {
+    doc.querySelectorAll(".reveal, .frame, .steps").forEach(function (el) { el.classList.add("in"); });
+  }
+
+  // The hero phone follows the pointer.
+  var stage = $("stage"), phone = $("phone");
+  if (stage && !reduce && window.matchMedia("(pointer: fine)").matches) {
+    stage.addEventListener("pointermove", function (e) {
+      var r = stage.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+      phone.classList.add("live");
+      phone.style.setProperty("--ry", (x * 22).toFixed(1) + "deg");
+      phone.style.setProperty("--rx", (-y * 14).toFixed(1) + "deg");
+    });
+    stage.addEventListener("pointerleave", function () {
+      phone.classList.remove("live");
+      phone.style.setProperty("--ry", "0deg");
+      phone.style.setProperty("--rx", "0deg");
+    });
+  }
+
+  // Questions open and close.
+  doc.querySelectorAll(".faq-q").forEach(function (q) {
+    q.addEventListener("click", function () {
+      var item = q.closest(".faq-item"), open = item.classList.toggle("open");
+      q.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+
+  // Try it: a phone you can tap. Each situation is a short script; timers run it, the person's taps move it on.
+  var timers = [], scenario = "scam", phase = "idle", interacted = false;
+  var bubble = $("bubble"), panel = $("panel"), ripple = $("ripple"), toast = $("toast"), hint = $("hint"), tag = $("tag");
+  var steps = doc.querySelectorAll("#demo-steps li"), tabs = doc.querySelectorAll(".demo-tabs button");
+  var views = { menu: $("view-menu"), scam: $("view-scam"), reply: $("view-reply"), guide: $("view-guide"), step: $("view-step") };
+  var screens = { scam: $("scr-sms"), reply: $("scr-chat"), guide: $("scr-settings"), display: $("scr-display") };
+  var rowDisplay = $("row-display"), rowDark = $("row-dark");
+  var leads = { scam: "Scam check", reply: "Suggest a reply", guide: "Where do I tap?" };
+  var acts = { scam: $("act-scam"), reply: $("act-lead"), guide: $("act-tap") };
+
+  function later(fn, ms) { timers.push(setTimeout(fn, reduce ? Math.min(ms, 60) : ms)); }
+  function clear() { timers.forEach(clearTimeout); timers = []; }
+  function showScreen(name) {
+    Object.keys(screens).forEach(function (k) { screens[k].classList.toggle("show", k === name); });
+  }
+  function showView(name) {
+    Object.keys(views).forEach(function (k) { views[k].classList.toggle("show", k === name); });
+  }
+  function stepTo(n, done) {
+    steps.forEach(function (li, i) {
+      li.classList.toggle("active", i === n);
+      li.classList.toggle("done", i < n || done);
+    });
+  }
+  function say(text) { hint.textContent = text; }
+  function rippleAt(x, y) {
+    ripple.style.left = x; ripple.style.top = y;
+    ripple.classList.remove("go"); void ripple.offsetWidth; ripple.classList.add("go");
+  }
+  function lift(up) { panel.classList.toggle("up", up); }
+  function reveal(id) { var a = $(id); a.classList.remove("in"); void a.offsetWidth; a.classList.add("in"); }
+
+  function reset(name) {
+    clear();
+    scenario = name; phase = "idle";
+    lift(false); showView("menu");
+    Object.keys(acts).forEach(function (k) { acts[k].classList.remove("on"); });
+    $("act-lead").textContent = name === "reply" ? "Suggest a reply" : "Ask a question";
+    showScreen(name);
+    screens.display.classList.remove("dark");
+    $("dark-state").textContent = "Off";
+    rowDisplay.disabled = true; rowDark.disabled = true;
+    rowDisplay.classList.remove("hl"); rowDark.classList.remove("hl");
+    bubble.classList.remove("busy", "quiet");
+    tag.classList.remove("hide");
+    toast.classList.remove("show");
+    doc.querySelectorAll(".reply").forEach(function (b) { b.classList.remove("copied"); });
+    stepTo(-1, false);
+    say("Tap the Wazirly button on the phone");
+    tabs.forEach(function (t) { t.setAttribute("aria-pressed", t.getAttribute("data-scenario") === name ? "true" : "false"); });
+  }
+
+  function tapBubble() {
+    if (phase !== "idle") return;
+    phase = "reading";
+    tag.classList.add("hide");
+    bubble.classList.add("quiet", "busy");
+    rippleAt("90.3%", "53.6%");
+    stepTo(0, false);
+    say("Wazirly is reading the screen…");
+    $("panel-title").textContent = "Wazirly";
+    $("scan-text").textContent = "Reading the screen…";
+    $("scan").style.display = "";
+    $("actions").style.opacity = "0.35";
+    later(function () { lift(true); stepTo(1, false); }, 250);
+    later(function () {
+      $("scan").style.display = "none";
+      $("actions").style.opacity = "1";
+      stepTo(2, false);
+      say("Wazirly offers what fits this screen. Watch it pick " + leads[scenario] + ".");
+    }, 1500);
+    later(function () { acts[scenario].classList.add("on"); }, 2300);
+    later(function () {
+      $("panel-title").textContent = leads[scenario];
+      if (scenario === "guide") { showView("guide"); typeGoal(); return; }
+      showView("menu");
+      $("scan").style.display = "";
+      $("scan-text").textContent = scenario === "reply" ? "Reading the chat…" : "Thinking…";
+      $("actions").style.opacity = "0";
+      say("Thinking…");
+    }, 3000);
+    if (scenario !== "guide") {
+      later(function () {
+        showView(scenario);
+        reveal(scenario === "scam" ? "ans-scam" : "ans-reply");
+        stepTo(3, true);
+        phase = "answered";
+        say(scenario === "scam" ? "Strong warning signs, with what to do next. Try another situation above." : "Three replies, written for this chat. Tap one to copy it.");
+      }, 4300);
+    }
+  }
+
+  function typeGoal() {
+    phase = "typing";
+    var text = "turn on dark mode", out = $("typed"), i = 0;
+    out.textContent = "";
+    say("You type or say what you want to do…");
+    function next() {
+      out.textContent = text.slice(0, ++i);
+      if (i < text.length) later(next, 55 + Math.random() * 60);
+      else { $("find").disabled = false; later(findIt, 700); }
+    }
+    later(next, 300);
+  }
+
+  function findIt() {
+    if (phase !== "typing") return;
+    phase = "step1";
+    $("find").disabled = true;
+    $("step-tag").textContent = "Step 1";
+    $("step-text").textContent = "Tap Display. Dark mode is on the page it opens.";
+    $("step-note").textContent = "Once you've done that, Wazirly shows the next step.";
+    showView("step"); reveal("ans-step");
+    stepTo(3, false);
+    later(function () { rowDisplay.classList.add("hl"); rowDisplay.disabled = false; say("Wazirly put a ring around Display. Tap it."); }, 600);
+  }
+
+  function tapDisplay() {
+    if (phase !== "step1") return;
+    phase = "step2";
+    rowDisplay.disabled = true;
+    lift(false);
+    say("Wazirly follows you to the next screen…");
+    later(function () { showScreen("display"); }, 350);
+    later(function () {
+      $("step-tag").textContent = "Step 2";
+      $("step-text").textContent = "Tap the Dark mode switch to turn it on.";
+      $("step-note").textContent = "This is the last step.";
+      reveal("ans-step"); lift(true);
+    }, 1200);
+    later(function () { rowDark.classList.add("hl"); rowDark.disabled = false; say("Now tap the Dark mode switch."); }, 1900);
+  }
+
+  function tapDark() {
+    if (phase !== "step2") return;
+    phase = "done";
+    rowDark.disabled = true; rowDark.classList.remove("hl");
+    screens.display.classList.add("dark");
+    $("dark-state").textContent = "On";
+    stepTo(3, true);
+    later(function () { lift(false); }, 500);
+    later(function () { toast.textContent = "Done. Dark mode is on."; toast.classList.add("show"); say("Done. Two taps, no guessing. Try another situation above."); }, 900);
+    later(function () { toast.classList.remove("show"); }, 3600);
+  }
+
+  if (bubble) {
+    bubble.addEventListener("click", function () { interacted = true; tapBubble(); });
+    rowDisplay.addEventListener("click", function () { interacted = true; tapDisplay(); });
+    rowDark.addEventListener("click", function () { interacted = true; tapDark(); });
+    $("find").addEventListener("click", function () { interacted = true; clear(); findIt(); });
+    $("panel-close").addEventListener("click", function () { interacted = true; reset(scenario); });
+    tabs.forEach(function (t) {
+      t.addEventListener("click", function () { interacted = true; reset(t.getAttribute("data-scenario")); });
+    });
+    doc.querySelectorAll(".reply").forEach(function (b) {
+      b.addEventListener("click", function () {
+        doc.querySelectorAll(".reply").forEach(function (o) { o.classList.remove("copied"); });
+        b.classList.add("copied");
+        toast.textContent = "Copied · paste it in the chat";
+        toast.classList.add("show");
+        say("Copied. In the real app you paste it into the chat and send.");
+        clear(); later(function () { toast.classList.remove("show"); }, 2800);
+      });
+    });
+
+    // Left alone, the demo plays the first situation by itself once it comes into view.
+    if ("IntersectionObserver" in window && !reduce) {
+      var once = new IntersectionObserver(function (entries) {
+        if (!entries[0].isIntersecting) return;
+        once.disconnect();
+        later(function () { if (!interacted && phase === "idle") tapBubble(); }, 1400);
+      }, { threshold: 0.5 });
+      once.observe($("mock"));
+    }
+    reset("scam");
+  }
+})();
+</script>
 </body>
 </html>
