@@ -3,33 +3,202 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wazirly: tap for help on any screen, in any app</title>
-<meta name="description" content="Wazirly is a button that sits over any app on your Android phone. Tap it to check if a message is a scam, get a reply written for you, or be shown exactly where to tap. Join the waitlist.">
+<title>Wazirly: the AI help button for Android. Scam check, replies, where to tap</title>
+<meta name="description" content="Wazirly is a free AI assistant for Android that floats over any app. Tap it to check a message for scams, get a reply written for you, be shown where to tap, or summarise and translate what's on your screen. Early access on Google Play.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://wazirly.com/">
 <meta name="theme-color" content="#17091B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Wazirly">
 <meta property="og:title" content="A help button for your whole phone.">
-<meta property="og:description" content="Scam check, replies written for you, and step-by-step help, over any app. Join the waitlist for early access on Google Play.">
+<meta property="og:description" content="Wazirly floats over any app on Android. Tap it to check a message for scams, get a reply written for you, or be shown where to tap. Free to start; early access on Google Play.">
 <meta property="og:image" content="https://wazirly.com/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://wazirly.com/">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A help button for your whole phone.">
+<meta name="twitter:description" content="Scam check, replies written for you, and step-by-step help, over any Android app. Free to start.">
+<meta name="twitter:image" content="https://wazirly.com/assets/og.jpg">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/icon-512.png">
 <link rel="stylesheet" href="assets/site.css">
 <link rel="stylesheet" href="assets/landing.css?v=3">
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Wazirly",
-  "operatingSystem": "Android 8.0 or newer",
-  "applicationCategory": "UtilitiesApplication",
-  "description": "A button that sits over any app. Tap it for a scam check, a reply written in your tone, step-by-step help on where to tap, a summary or a translation of what's on your screen.",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "url": "https://wazirly.com/",
-  "image": "https://wazirly.com/assets/og.jpg"
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://wazirly.com/#org",
+   "name": "Sharkstack Developments",
+   "url": "https://wazirly.com/",
+   "logo": "https://wazirly.com/assets/icon-512.png",
+   "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "info@sharkstack.dev",
+    "availableLanguage": [
+     "English",
+     "Urdu"
+    ]
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://wazirly.com/#website",
+   "url": "https://wazirly.com/",
+   "name": "Wazirly",
+   "publisher": {
+    "@id": "https://wazirly.com/#org"
+   },
+   "inLanguage": "en"
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://wazirly.com/#app",
+   "name": "Wazirly",
+   "url": "https://wazirly.com/",
+   "image": "https://wazirly.com/assets/og.jpg",
+   "description": "A free AI help button for Android. It floats over every app; tap it and it reads the screen, then helps in plain words: a scam check, three suggested replies in your tone, step-by-step guidance on where to tap, a summary, a translation, or an answer about what is on the screen.",
+   "applicationCategory": "UtilitiesApplication",
+   "applicationSubCategory": "AI assistant",
+   "operatingSystem": "Android 8.0 or newer",
+   "isAccessibleForFree": true,
+   "inLanguage": [
+    "en",
+    "ur"
+   ],
+   "offers": [
+    {
+     "@type": "Offer",
+     "name": "Free",
+     "price": "0",
+     "priceCurrency": "USD",
+     "description": "10 answers a day, every feature, no card needed."
+    },
+    {
+     "@type": "Offer",
+     "name": "Premium",
+     "description": "50 answers a day and answers that can search the web, as a monthly or yearly subscription through Google Play. Free for testers while Wazirly is in testing."
+    }
+   ],
+   "featureList": [
+    "Scam check for texts, emails and posts",
+    "Suggested replies in your own tone",
+    "Where do I tap: step-by-step guidance that rings the next button",
+    "Summary of long emails, chats and bills",
+    "Translate what is on the screen",
+    "Ask about the screen or a picture"
+   ],
+   "screenshot": [
+    "https://wazirly.com/assets/screens/sms-scam.jpg",
+    "https://wazirly.com/assets/screens/chat-replies.jpg",
+    "https://wazirly.com/assets/screens/settings-step1.jpg",
+    "https://wazirly.com/assets/screens/display-step2.jpg",
+    "https://wazirly.com/assets/screens/inbox-summary.jpg",
+    "https://wazirly.com/assets/screens/bill.jpg"
+   ],
+   "downloadUrl": "https://play.google.com/store/apps/details?id=com.sharkstack.wazirly",
+   "installUrl": "https://play.google.com/apps/testing/com.sharkstack.wazirly",
+   "author": {
+    "@id": "https://wazirly.com/#org"
+   },
+   "publisher": {
+    "@id": "https://wazirly.com/#org"
+   }
+  },
+  {
+   "@type": "VideoObject",
+   "name": "How Wazirly works in sixty seconds",
+   "description": "Wazirly suggests replies in a chat, checks a text for a scam, and guides a tap through Settings, over the real apps.",
+   "thumbnailUrl": "https://wazirly.com/assets/shots/replies.jpg",
+   "contentUrl": "https://wazirly.com/assets/video/how-wazirly-works.mp4",
+   "uploadDate": "2026-11-25",
+   "duration": "PT1M5S",
+   "inLanguage": "en",
+   "publisher": {
+    "@id": "https://wazirly.com/#org"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "What exactly is Wazirly?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An Android app that puts a small button over every app on your phone. When you're stuck, tap it: Wazirly reads what's on your screen and helps with what's in front of you, from a suspicious text to a reply you don't know how to write."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is it free?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. The free plan gives you 10 answers a day with every feature, and no card is needed. Premium gives you 50 a day and answers that can search the web. While Wazirly is in testing, testers get Premium free."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which phones does it work on?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Android phones with Android 8.0 or newer, which is nearly every Android phone in use today, not just the latest models. It isn't on iPhone yet, because iPhone doesn't let apps show a button over other apps. Join the waitlist and choose iPhone to hear first if that changes."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does it work in every app?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "In almost every app: chats, texts, email, social media, shopping, government and health sites. For your safety, Android hides it in your phone's own Settings app and on some banking and password screens."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What does Wazirly see, and who else does?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Only the screen you're on, and only when you tap its button. To write the answer, the words on that screen go to Wazirly's server and an AI model. They aren't sold, used for ads, or used to train AI. Pictures are sent only if you agree. The privacy policy has every detail."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is the scam check always right?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No checker is. Wazirly tells you the warning signs it can see and what to do, as a second opinion. If you're unsure, don't pay or share codes, and check with your bank or the company using a number you already trust."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Which languages does it speak?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Wazirly's screens and answers come in English, Urdu and Roman Urdu. It can read and translate what's on your screen in many more."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I get it now?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Join the waitlist above. We'll email you the link to join the Wazirly testers group; join it, accept the Google Play early-access test, and install Wazirly from Google Play like any other app."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Who makes Wazirly?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sharkstack Developments, a small independent studio. The same people answer every email at info@sharkstack.dev, and the privacy policy says exactly what the app reads and keeps."
+     }
+    }
+   ]
+  }
+ ]
 }
 </script>
 </head>
@@ -454,6 +623,7 @@
       <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a6">Is the scam check always right?<span class="plus"></span></button></h3><div class="faq-a" id="faq-a6"><div><p>No checker is. Wazirly tells you the warning signs it can see and what to do, as a second opinion. If you're unsure, don't pay or share codes, and check with your bank or the company using a number you already trust.</p></div></div></div>
       <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a7">Which languages does it speak?<span class="plus"></span></button></h3><div class="faq-a" id="faq-a7"><div><p>Wazirly's screens and answers come in English, Urdu and Roman Urdu. It can read and translate what's on your screen in many more.</p></div></div></div>
       <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a8">How do I get it now?<span class="plus"></span></button></h3><div class="faq-a" id="faq-a8"><div><p>Join the waitlist above. We'll email you the link to join the Wazirly testers group; join it, accept the Google Play early-access test, and install Wazirly from Google Play like any other app.</p></div></div></div>
+      <div class="faq-item"><h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a9">Who makes Wazirly?<span class="plus"></span></button></h3><div class="faq-a" id="faq-a9"><div><p>Sharkstack Developments, a small independent studio. The same people answer every email at <a href="mailto:info@sharkstack.dev">info@sharkstack.dev</a>, and the <a href="privacy/">privacy policy</a> says exactly what the app reads and keeps.</p></div></div></div>
     </div>
   </div>
 </section>

@@ -1,0 +1,19 @@
+# Wazirly
+
+> Wazirly is a free Android app: a small button that floats over every other app. Tap it and it reads what is on the screen, then helps in plain words: a scam check for a suspicious text or email, three suggested replies in your own tone, step-by-step "where do I tap" guidance that rings the next button, a summary of a long email or bill, a translation, or an answer about what is on the screen or in a picture. Made by Sharkstack Developments. In early access on Google Play.
+
+## Facts
+
+- Platform: Android 8.0 or newer. Not on iPhone (iOS does not let apps draw a button over other apps).
+- Price: free plan with 10 answers a day and every feature; Premium (50 answers a day, answers that can search the web) is a subscription through Google Play. Testers get Premium free while the app is in testing.
+- Languages: the app and its answers in English, Urdu and Roman Urdu; it reads and translates many more.
+- Privacy: reads the screen only when its button is tapped; pictures go only with the person's permission; nothing is sold, used for ads, or used to train AI; everything can be deleted from the app or at https://wazirly.com/delete-account/.
+- Where it works: over almost every app (chats, texts, email, social, shopping, government and health sites). Android hides it in the phone's own Settings and on some banking and password screens.
+- Status: early access through a closed test on Google Play; join at https://wazirly.com/#join.
+- Developer: Sharkstack Developments. Contact: info@sharkstack.dev.
+
+## Pages
+
+- [Home](https://wazirly.com/): what it does, a demo you can tap, prices, the waitlist, questions.
+- [Privacy policy](https://wazirly.com/privacy/): what is read, kept, and for how long.
+- [Delete your account](https://wazirly.com/delete-account/): how to delete everything.
