@@ -2,6 +2,8 @@
 
 > Wazirly is a free Android app: a small button that floats over every other app. Tap it and it reads what is on the screen, then helps in plain words: a scam check for a suspicious text or email, three suggested replies in your own tone, step-by-step "where do I tap" guidance that rings the next button, a summary of a long email or bill, a translation, or an answer about what is on the screen or in a picture. Made by Sharkstack Developments. In early access on Google Play.
 
+Also described as: an AI phone assistant for Android, an on-screen AI assistant, a scam text checker, an AI reply writer for chats, a "where do I tap" guide, a screen summariser and translator, a help button for a parent's phone.
+
 ## Facts
 
 - Platform: Android 8.0 or newer. Not on iPhone (iOS does not let apps draw a button over other apps).
