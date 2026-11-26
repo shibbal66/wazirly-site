@@ -17,6 +17,10 @@ Also described as: an AI phone assistant for Android, an on-screen AI assistant,
 ## Pages
 
 - [Home](https://wazirly.com/): what it does, a demo you can tap, prices, the waitlist, questions.
+- [Is this text a scam?](https://wazirly.com/scam-check/): the common scam messages, the signs, what to do, and how the scam check works.
+- [AI reply writer](https://wazirly.com/reply/): three replies in your tone inside any chat.
+- [Where do I tap?](https://wazirly.com/where-do-i-tap/): step-by-step help in any Android app, and its limits.
+- [For parents and grandparents](https://wazirly.com/for-parents/): setting it up once on a family member's phone.
 - [About](https://wazirly.com/about/): who makes Wazirly and why.
 - [Privacy policy](https://wazirly.com/privacy/): what is read, kept, and for how long.
 - [Delete your account](https://wazirly.com/delete-account/): how to delete everything.
