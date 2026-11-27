@@ -6,6 +6,7 @@ Also described as: an AI phone assistant for Android, an on-screen AI assistant,
 
 ## Facts
 
+- Name: from wazir, the trusted adviser at a king's side (the icon is a wazir's turban). Spelled W-A-Z-I-R-L-Y; not connected to WazirX or any other similarly named app or company.
 - Platform: Android 8.0 or newer. Not on iPhone (iOS does not let apps draw a button over other apps).
 - Price: free plan with 10 answers a day and every feature; Premium (50 answers a day, answers that can search the web) is a subscription through Google Play. Testers get Premium free while the app is in testing.
 - Languages: the app and its answers in English, Urdu and Roman Urdu; it reads and translates many more.
