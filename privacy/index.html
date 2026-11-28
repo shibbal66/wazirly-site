@@ -56,7 +56,8 @@ anything off your phone.</p>
   <li>only if you agreed, the identifier Google Analytics uses and records waiting to be sent;</li>
   <li>counts used to decide when to show Google Play's rating card;</li>
   <li>in versions from 0.5.6, Scam check's record of the chats it checked: for each chat, up to its last 5 checks
-    from the past 30 days, each with its result, the kind of scam, the stage it had reached and the day. It is kept
+    from the past 30 days, each with its result, the kind of scam, the stage it had reached, which signs the phone
+    found (see <a href="#cloud">Cloud features</a>) and the day. It is kept
     under a scrambled code made from the chat's name or number, never the name, the number or any message, and older
     checks are deleted after 30 days;</li>
   <li>crash reports waiting to be sent (see <a href="#crash-reports">Crash reports</a>).</li>
@@ -114,9 +115,13 @@ Wazirly's answers, or your phone's language, used only to choose the language of
 </ul>
 <p>If reply memory is on, it also sends your reply memory (see <a href="#reply-memory">Reply memory</a>). You can
 change your reply settings in the app at any time.</p>
-<p>In versions from 0.5.6, "Scam check" also sends your phone's country, as set in its language and region settings
-(not its location), and, if you checked the same chat before, Scam check's record of it: the earlier results, kinds
-of scam and stages, and how many days ago they were. It never sends the chat's name or number for this.</p>
+<p>In versions from 0.5.6, "Scam check" first looks for warning signs on your phone, using fixed rules (for example
+"asks for a code", "has a link", "asks you to keep it secret"), and shows them while it waits. It then blanks card
+numbers, ID numbers (such as a CNIC or Social Security number), IBANs and one-time codes in the text before it leaves
+your phone. Along with that text it sends which of those signs it found (from a fixed list, never the words
+themselves), your phone's country, as set in its language and region settings (not its location), and, if you checked
+the same chat before, Scam check's record of it: the earlier results, kinds of scam, stages and signs, and how many
+days ago they were. It never sends the chat's name or number for this.</p>
 <p>The server passes the request to Anthropic, the AI provider that produces the answer on Wazirly's behalf, and
 sends the answer back to you. In versions from 0.5.3, a Premium answer to "Ask a question" or "Where do I tap?" may
 also search the web when what's on your screen isn't enough (for example a current price, or how an app's menus are
