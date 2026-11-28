@@ -19,6 +19,8 @@ Also described as: an AI phone assistant for Android, an on-screen AI assistant,
 
 - [Home](https://wazirly.com/): what it does, a demo you can tap, prices, the waitlist, questions.
 - [Is this text a scam?](https://wazirly.com/scam-check/): the common scam messages, the signs, what to do, and how the scam check works.
+- [Scam library: how scams work, step by step](https://wazirly.com/scams/): eleven common scams in the US, UK, Canada and Australia, each mapped stage by stage (opener, building trust, moving you to another app, bait, ask, pressure, exit), with the signs, the one thing to do now, and where to report if you already paid.
+- [Report a scam](https://wazirly.com/report-a-scam/): who to call and where to report in the US, UK, Canada and Australia, and what to do in the first hour after paying a scammer.
 - [AI reply writer](https://wazirly.com/reply/): three replies in your tone inside any chat.
 - [Where do I tap?](https://wazirly.com/where-do-i-tap/): step-by-step help in any Android app, and its limits.
 - [For parents and grandparents](https://wazirly.com/for-parents/): setting it up once on a family member's phone.
@@ -26,3 +28,23 @@ Also described as: an AI phone assistant for Android, an on-screen AI assistant,
 - [About](https://wazirly.com/about/): who makes Wazirly and why.
 - [Privacy policy](https://wazirly.com/privacy/): what is read, kept, and for how long.
 - [Delete your account](https://wazirly.com/delete-account/): how to delete everything.
+
+## Scam library
+
+Each guide cites its sources (FTC, FBI IC3, UK Finance, the Canadian Anti-Fraud Centre, the agencies named) and was checked on 2026-11-28.
+
+- [Unpaid toll texts](https://wazirly.com/scams/toll-text/): a text says you owe a toll and links to a payment page; it's almost always a scam. Check with the toll service's own site or app, never the link.
+- [Parcel delivery fee texts](https://wazirly.com/scams/delivery-text/): the most-reported text scam in the US in 2024 (FTC). USPS, Canada Post and Australia Post say they don't text asking for payment.
+- ["Hi Mum, new number" texts](https://wazirly.com/scams/hi-mum/): a "child" on a new number asks for money; call your child on the number you already have.
+- ["Wrong number" texts and pig butchering](https://wazirly.com/scams/wrong-number/): a stranger keeps chatting, moves to WhatsApp or Telegram, then pitches a crypto platform; withdrawals are blocked by fees.
+- [Task and remote job scams](https://wazirly.com/scams/task-scam/): paid to rate apps or like videos, then asked to deposit money to unlock earnings. Never pay to get paid.
+- [Bank "safe account" calls](https://wazirly.com/scams/safe-account/): banks never ask you to move money to keep it safe; hang up and call the number on your card (159 in the UK).
+- [IRS, Social Security, HMRC, CRA, ATO and myGov scams](https://wazirly.com/scams/government-impersonation/): what each agency says it never does, and where to report impostors.
+- [WhatsApp "I sent you a code by mistake"](https://wazirly.com/scams/whatsapp-code/): sharing the six-digit code hands over your account; how to get it back and turn on two-step verification.
+- [Marketplace buyer and seller scams](https://wazirly.com/scams/marketplace/): buyers who ask for a verification code or send a fake payment, sellers who want a bank-transfer deposit.
+- [Fake virus pop-ups and tech support calls](https://wazirly.com/scams/tech-support/): real warnings never show a phone number to call; the Phantom Hacker hand-off to a fake bank and agency.
+- [Recovery scams](https://wazirly.com/scams/recovery-scam/): anyone who asks for an upfront fee to recover lost money is a scammer; IC3 never contacts victims directly.
+
+Where to report, in one line each: US, ReportFraud.ftc.gov and ic3.gov, scam texts to 7726; UK, Report Fraud (reportfraud.police.uk, 0300 123 2040; replaced Action Fraud on 4 December 2025) or Police Scotland 101, texts to 7726, emails to report@phishing.gov.uk, 159 for your bank; Canada, the Canadian Anti-Fraud Centre (reportcyberandfraud.canada.ca, 1-888-495-8501); Australia, Scamwatch and ReportCyber, IDCARE 1800 595 160.
+
+What Wazirly's Scam check does today: on any Android screen, when its button is tapped, it gives one of three results (strong warning signs, some warning signs, no warning signs found) with up to three reasons and one line of advice. It never says a message is safe. It reads one screen at a time and can't hear phone calls.
